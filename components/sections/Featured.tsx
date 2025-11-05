@@ -37,7 +37,7 @@ const Featured = () => {
           alt="Cartlag Poster"
           className="w-full md:w-1/2 h-auto"
         />
-        <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto pr-11 mt-2 md:mt-0">
+        <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto md:pr-11 mt-5 md:mt-0">
           <div className="flex flex-col justify-center self-center gap-2 md:gap-5">
             <h1 className=" text-4xl sm:text-6xl md:block text-[#F4F3F1] md:text-7xl lg:text-8xl   font-extrabold self-center  justify-start   leading-none">
               Cartlag
@@ -92,8 +92,8 @@ const Featured = () => {
             href="https://www.cartlag.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="self-center  
-    group relative  mt-6 sm:mt-11 lg:mt-12 md:ml-0 md:mt-8 inline-flex  w-fit items-center
+            className="ml-5 sm:ml-11 self-center  
+    group relative  mt-6 sm:mt-8   lg:mt-12 md:ml-0 md:mt-8 inline-flex  w-fit items-center
     rounded-[1px] px-5 py-2  text-sm sm:text-lg  md:px-6 md:py-3 font-normal tracking-[0.03em]
     text-[#F5672D] ring-1 ring-[rgba(245,103,45,0.6)]
     transition-transform duration-300 ease-out
@@ -104,7 +104,7 @@ const Featured = () => {
           >
             <span className="relative z-10">Try it out</span>
             <img
-              src="/icons/yellow-arrow-left.svg"
+              src="/icons/yellow-arrow-right.svg"
               alt="Yellow Arrow"
               className="ml-2 w-[9px] sm:w-3  h-auto"
               loading="eager"

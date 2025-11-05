@@ -40,7 +40,7 @@ function TypingLine({
 const About = () => {
   const ref = useRef<HTMLDivElement | null>(null);
 
-  const inView = useInView(ref, { amount: 0.9, margin: '-30% 0px -10% 0px' });
+  const inView = useInView(ref, { amount: 0.9, margin: '0% 0px -10% 0px' });
 
   const [playing, setPlaying] = useState(false);
   useEffect(() => {
