@@ -33,25 +33,16 @@ body {
 * {
   -ms-overflow-style: none;
 }
-.text-noise {
-  position: relative;
-  display: inline-block;
-  color: #f5672d; /* your base color */
-}
 
-.text-noise::after {
-  content: attr(data-text); /* print the same text again */
-  position: absolute;
-  inset: 0;
-  background: url('/images/noise.png') repeat;
-  background-size: 120px 120px;
-  /* clip the noise to the text */
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  opacity: 0.6; /* adjust like Figma 0.4 */
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
-.noise-text {
-  z-index: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
