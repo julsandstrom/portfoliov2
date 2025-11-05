@@ -30,9 +30,25 @@ const spaceGrotesk = Space_Grotesk({
   weight: ['300', '400', '500', '600', '700'],
 });
 
-const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'Frontend dev',
+export const metadata = {
+  title: 'Julian Sandström | Frontend Developer',
+  description:
+    'Building clean, thoughtful interfaces with a focus on UX and detail.',
+  openGraph: {
+    title: 'Julian Sandström | Portfolio',
+    description: 'Frontend developer crafting smooth, clear UI experiences.',
+    url: 'https://julsan.netlify.app',
+    siteName: 'Julian Sandström Portfolio',
+    images: [
+      {
+        url: '/images/PixelJulle.png',
+        width: 252,
+        height: 223,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

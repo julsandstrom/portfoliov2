@@ -130,7 +130,7 @@ const About = () => {
         text-sm sm:text-lg  tracking-[0.03em] font-normal text-[#EAE6E1] transition-transform duration-300 ease-out
     hover:scale-[0.98] hover:text-[#ECA85A]
     focus:outline-none
-    before:absolute before:-inset-1 before:content-['']"
+    before:absolute before:inset-0 before:content-[''] before:pointer-events-none"
       >
         Contact me
       </a>
