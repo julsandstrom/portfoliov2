@@ -24,7 +24,7 @@ export const projects = [
     url: 'https://driftus.netlify.app/login',
   },
   {
-    title: 'Cartlag',
+    title: 'Return Cascade',
     image: '/images/ReturnCascadeMobile.png',
     overlayTitle: 'A juggling-inspired FPS in the snow',
     overlayBody:

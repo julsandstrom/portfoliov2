@@ -37,15 +37,15 @@ const Featured = () => {
           alt="Cartlag Poster"
           className="w-full md:w-1/2 h-auto"
         />
-        <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto pr-11 ">
-          <div className="flex flex-col justify-center self-center gap-5">
-            <h1 className="hidden md:block text-white md:text-7xl lg:text-8xl   font-extrabold self-center  justify-start   leading-none">
+        <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto pr-11 mt-2 md:mt-0">
+          <div className="flex flex-col justify-center self-center gap-2 md:gap-5">
+            <h1 className=" text-4xl sm:text-6xl md:block text-[#F4F3F1] md:text-7xl lg:text-8xl   font-extrabold self-center  justify-start   leading-none">
               Cartlag
-              <span className="md:text-xl lg:text-2xl font-extralight md:ml-1 lg:ml-3 ">
+              <span className="text-base md:text-xl lg:text-2xl font-extralight md:ml-1 lg:ml-3 ">
                 .com
               </span>
             </h1>
-            <h2 className="hidden md:block text-white  md:text-xl self-center font-light lg:text-2xl text-center">
+            <h2 className="text- sm:text-base font-extralight md:block text-[#F4F3F1] md:text-xl self-center md:font-light lg:text-2xl text-center">
               Digital Sizing Card
             </h2>
           </div>

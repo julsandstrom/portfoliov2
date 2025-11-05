@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 bg-[#0B0B0B]/80 z-50 ">
-      <div className="mx-auto flex  items-center justify-between px-5 sm:px-11 lg:px-14 py-2 sm:py-6 ">
+      <div className="mx-auto flex  items-center justify-between px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
         <span className="text-xs sm:text-base md:text-xl tracking-[0.03em]">
           Julian Sandstrom
         </span>
