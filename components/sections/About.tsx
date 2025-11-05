@@ -80,11 +80,11 @@ const About = () => {
         />
       </div>
 
-      <div className="mt-16 sm:mt-24 md:mt-32 flex  justify-center 2xl:justify-around place-items-end gap-10 md:gap-24 sm:gap-16 lg:gap-32 text-sm text-[#1C1C1C]/70">
+      <div className="mt-16 sm:mt-24 md:mt-32 flex  justify-center 2xl:justify-around place-items-end gap-8 md:gap-24 sm:gap-16 lg:gap-32 text-sm text-[#1C1C1C]/70">
         <img
           src="/icons/Nextjs-logo.svg"
           alt="Next.js logo"
-          className="ml-2 w-10 sm:w-16 md:w-20"
+          className=" w-10 sm:w-16 md:w-20"
         />
 
         <img
@@ -100,7 +100,7 @@ const About = () => {
             alt="Tailwind logo"
             className="ml-2 w-3 sm:w-5 md:w-7"
           />{' '}
-          <span className="text-[9px] sm:text-sm md:text-xl font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 align-bottom self-end  leading-none">
+          <span className="text-[11px] sm:text-sm md:text-xl font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 align-bottom self-end  leading-none">
             {' '}
             React
           </span>
@@ -112,7 +112,7 @@ const About = () => {
             alt="Tailwind logo"
             className="ml-2 w-3 sm:w-4 md:w-6 "
           />
-          <span className="text-[9px] sm:text-sm md:text-xl  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none">
+          <span className="text-[11px] sm:text-sm md:text-xl  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none">
             {' '}
             TypeScript
           </span>
