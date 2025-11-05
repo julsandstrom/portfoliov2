@@ -20,7 +20,7 @@ const Hero = () => {
           className="w-70 sm:w-[500px] md:w-[700px] lg:w-[900px] h-auto"
           loading="eager"
         />
-        <p className="font-grotesk text-sm sm:text-xl md:text-2xl font-extralight opacity-60 uppercase tracking-[0.4em] text-[#ECECEC] mt-1 sm:mt-6 md:mt-8 text-right">
+        <p className="font-grotesk text-sm sm:text-xl md:text-2xl lg:text-3xl font-extralight opacity-60 uppercase tracking-[0.4em] text-[#ECECEC] mt-1 sm:mt-6 md:mt-8 lg:mt-14 text-right">
           Developer
         </p>
         <img
