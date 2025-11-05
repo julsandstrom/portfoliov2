@@ -12,7 +12,7 @@ const Hero = () => {
     else controls.set('hidden');
   }, [inView, controls]);
   return (
-    <section className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl   px-5  min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3">
+    <section className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3">
       <div className="relative inline-block">
         <img
           src="/images/hero-title.svg"
@@ -44,7 +44,7 @@ const Hero = () => {
             className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[0.03em] inline-block"
             variants={{
               hidden: { opacity: 0, y: 0 },
-              visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
+              visible: { opacity: 1, y: 0, transition: { duration: 2 } },
             }}
           >
             Building interfaces

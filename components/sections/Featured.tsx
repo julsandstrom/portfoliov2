@@ -93,7 +93,7 @@ const Featured = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="self-center  
-    group relative mt-6 sm:mt-11 lg:mt-12 md:ml-0 md:mt-8 inline-flex  w-fit items-center
+    group relative  mt-6 sm:mt-11 lg:mt-12 md:ml-0 md:mt-8 inline-flex  w-fit items-center
     rounded-[1px] px-5 py-2  text-sm sm:text-lg  md:px-6 md:py-3 font-normal tracking-[0.03em]
     text-[#F5672D] ring-1 ring-[rgba(245,103,45,0.6)]
     transition-transform duration-300 ease-out

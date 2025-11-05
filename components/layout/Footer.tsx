@@ -20,7 +20,7 @@ const Footer = () => {
               <img
                 src="/icons/Gmail_icon_(2020).svg"
                 alt="Gmail"
-                className="ml-2 w-8 sm:w-11 md:w-14  h-auto"
+                className="ml-2 w-8 sm:w-11  h-auto"
                 loading="eager"
               />
             </a>
@@ -34,7 +34,7 @@ const Footer = () => {
               <img
                 src="/icons/LinkedIn_icon.svg"
                 alt="LinkedIn"
-                className="ml-2 w-8 sm:w-10 md:w-12  h-auto"
+                className="ml-2 w-8 sm:w-10   h-auto"
                 loading="eager"
               />
             </a>
