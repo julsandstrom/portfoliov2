@@ -23,14 +23,14 @@ const clashDisplay = localFont({
   display: 'swap',
 });
 
-export const spaceGrotesk = Space_Grotesk({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-spaceGrotesk',
   display: 'swap',
   weight: ['300', '400', '500', '600', '700'],
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: 'Portfolio',
   description: 'Frontend dev',
 };
