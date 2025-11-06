@@ -19,9 +19,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 bg-[#0B0B0B]/80 z-50 ">
       <div className="mx-auto flex  items-center justify-between px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
-        <span className="text-xs sm:text-base md:text-xl tracking-[0.03em]">
+        {/* <span className="text-xs sm:text-base md:text-xl tracking-[0.03em]">
           Julian Sandstrom
-        </span>
+        </span> */}
+        <a
+          href="/#home"
+          className="hover:text-[#F5672D] transition-colors text-xs sm:text-base md:text-xl tracking-[0.03em]"
+        >
+          Julian Sandstrom
+        </a>
 
         <button
           aria-label="Open navigation"
@@ -47,10 +53,10 @@ export default function Header() {
         </button>
 
         <nav className="hidden md:flex gap-16 font-light tracking-[0.04em] text-base md:text-xl">
-          <a href="#work" className="hover:text-[#F5672D] transition-colors">
+          <a href="/#work" className="hover:text-[#F5672D] transition-colors">
             Work
           </a>
-          <a href="#about" className="hover:text-[#F5672D] transition-colors">
+          <a href="/#about" className="hover:text-[#F5672D] transition-colors">
             About
           </a>
           <a
@@ -99,7 +105,7 @@ export default function Header() {
           <nav className="font-grotesk mt-8 flex flex-col items-center gap-3 sm:gap-6 text-base sm:text-xl">
             <div className=" flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1]">
               {' '}
-              <a href="#work" onClick={toggleMenu}>
+              <a href="/#work" onClick={toggleMenu}>
                 {' '}
                 Work{' '}
               </a>{' '}
@@ -111,7 +117,7 @@ export default function Header() {
             </div>{' '}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
               {' '}
-              <a href="#about" onClick={toggleMenu}>
+              <a href="/#about" onClick={toggleMenu}>
                 {' '}
                 About{' '}
               </a>{' '}
