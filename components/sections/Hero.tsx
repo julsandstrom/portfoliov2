@@ -12,10 +12,7 @@ const Hero = () => {
     else controls.set('hidden');
   }, [inView, controls]);
   return (
-    <section
-      id="home"
-      className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3"
-    >
+    <section className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3">
       <div className="relative inline-block">
         <img
           src="/images/hero-title.svg"
@@ -40,7 +37,7 @@ const Hero = () => {
           animate={controls}
           variants={{
             hidden: {},
-            visible: { transition: { staggerChildren: 1.7 } },
+            visible: { transition: { staggerChildren: 2 } },
           }}
         >
           <motion.span

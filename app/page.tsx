@@ -7,7 +7,7 @@ import About from '@/components/sections/About';
 import Projects from '@/components/sections/Projects';
 export default function Home() {
   return (
-    <div id="homepage" className="min-h-screen bg-[#0B0B0B] text-[#F4F3F1]">
+    <div id="home" className="min-h-screen bg-[#0B0B0B] text-[#F4F3F1]">
       <Header />
       <main>
         <Hero />

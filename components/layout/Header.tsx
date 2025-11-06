@@ -95,36 +95,44 @@ export default function Header() {
           </button>
 
           <a
-            href="#homepage"
+            href="#home"
             onClick={toggleMenu}
-            className="text-center text-base sm:text-xl font-extralight text-[#F5672D]"
+            className="text-center text-base sm:text-xl font-extralight text-[#F5672D] hover:text-[#F4F3F1] transition-colors"
           >
             Homepage
           </a>
 
-          <nav className="font-grotesk mt-8 flex flex-col items-center gap-3 sm:gap-6 text-base sm:text-xl">
+          <nav className="font-grotesk mt-8 flex flex-col items-center gap-6 sm:gap-8 text-base sm:text-xl">
             <div className=" flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1]">
               {' '}
-              <a href="/#work" onClick={toggleMenu}>
+              <a
+                href="/#work"
+                onClick={toggleMenu}
+                className="hover:text-[#F5672D] transition-colors"
+              >
                 {' '}
                 Work{' '}
               </a>{' '}
               <img
                 src="/icons/yellow-arrow-right.svg"
                 alt="yellow arrow"
-                className="w-3 sm:w-5 ml-2"
+                className="w-3  ml-2"
               />
             </div>{' '}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
               {' '}
-              <a href="/#about" onClick={toggleMenu}>
+              <a
+                href="/#about"
+                onClick={toggleMenu}
+                className="hover:text-[#F5672D] transition-colors"
+              >
                 {' '}
                 About{' '}
               </a>{' '}
               <img
                 src="/icons/yellow-arrow-right.svg"
                 alt="yellow arrow"
-                className="w-3 sm:w-5 ml-2"
+                className="w-3  ml-2"
               />
             </div>{' '}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
@@ -141,7 +149,7 @@ export default function Header() {
               <img
                 src="/icons/yellow-arrow-right.svg"
                 alt="yellow arrow"
-                className="w-3 sm:w-5 ml-2"
+                className="w-3  ml-2"
               />
             </div>
           </nav>

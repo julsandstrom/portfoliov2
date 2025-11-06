@@ -9,7 +9,7 @@ const container: Variants = {
 
 const item: Variants = {
   hidden: { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.45 } },
+  visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
 };
 import Image from 'next/image';
 
