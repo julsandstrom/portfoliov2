@@ -119,7 +119,7 @@ const About = () => {
         </div>
       </div>
 
-      <p className="mt-16 sm:mt-24 md:mt-32 font-grotesk font-light mx-auto block  tracking-[0.03em] text-base sm:text-xl   text-[#1C1C1C] max-w-md md:max-w-xl lg:max-w-2xl">
+      <p className="mt-16 sm:mt-24 md:mt-32 font-grotesk font-light mx-auto block  tracking-[0.03em] text-base sm:text-xl   text-[#1C1C1C] max-w-[350px] sm:max-w-[450px] md:max-w-xl lg:max-w-2xl">
         A background in film production and flight coordination, combining
         structure with emotion to craft scalable experiences.
       </p>
