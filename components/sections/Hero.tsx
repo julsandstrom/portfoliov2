@@ -26,7 +26,7 @@ const Hero = () => {
         <img
           src="/images/PixelJulle.png"
           alt="Avatar Image"
-          className="w-20 z-10 absolute left-10 sm:w-40 sm:left-16 top-[-9px] sm:top-[-15px] md:w-[210px] lg:w-[295px] md:left-24 lg:left-28 md:-top-5 lg:-top-8"
+          className="w-20 z-10 absolute left-10 sm:w-40 sm:left-16 top-[-9px] sm:top-[-15px] md:w-[210px] lg:w-[297px] md:left-24 lg:left-28 md:-top-5 lg:-top-8"
         />
       </div>
 
