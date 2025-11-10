@@ -1,5 +1,21 @@
 export const projects = [
   {
+    title: 'Cartlag',
+    image: '/images/CartlagMobile.png',
+    overlayTitle: 'A body measurement app',
+    overlayBody:
+      'Generate a personal size card you can download, update, and reuse across brands for accurate fit.',
+    url: 'https://puppeteerme.com/',
+  },
+  {
+    title: 'Driftus',
+    image: '/images/DriftusMobile.png',
+    overlayTitle: 'A chat app',
+    overlayBody:
+      'showing only the latest message, with AI stepping in when words run out.',
+    url: 'https://driftus.netlify.app/login',
+  },
+  {
     title: 'Puppeteer Me',
     image: '/images/PuppeteerMobile.png',
     overlayTitle: 'A quiz about someone you know',
@@ -15,14 +31,7 @@ export const projects = [
       'to rank your values and share or receive guidance from like-minded people.',
     url: 'https://julsandstrom.github.io/mekoja/',
   },
-  {
-    title: 'Driftus',
-    image: '/images/DriftusMobile.png',
-    overlayTitle: 'A chat app',
-    overlayBody:
-      'showing only the latest message, with AI stepping in when words run out.',
-    url: 'https://driftus.netlify.app/login',
-  },
+
   {
     title: 'Return Cascade',
     image: '/images/ReturnCascadeMobile.png',

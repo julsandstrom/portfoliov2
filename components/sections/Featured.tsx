@@ -33,20 +33,17 @@ const Featured = () => {
     >
       <div className=" mx-auto   flex flex-col md:flex-row ">
         <img
-          src="/images/CartlagPage.png"
+          src="/images/DashPage.png"
           alt="Cartlag Poster"
           className="w-full md:w-1/2 h-auto"
         />
         <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto md:pr-11 mt-5 md:mt-0">
-          <div className="flex flex-col justify-center self-center gap-2 md:gap-5">
-            <h1 className=" text-4xl sm:text-6xl md:block text-[#F4F3F1] md:text-7xl lg:text-8xl   font-extrabold self-center  justify-start   leading-none">
-              Cartlag
-              <span className="text-base md:text-xl lg:text-2xl font-extralight md:ml-1 lg:ml-3 ">
-                .com
-              </span>
+          <div className="flex flex-col justify-center self-center gap-2 md:gap-1">
+            <h1 className=" text-4xl sm:text-5xl md:block text-[#F4F3F1] md:text-4xl lg:text-5xl xl:text-6xl   font-extrabold self-center  justify-start   leading-none">
+              Data Presentation
             </h1>
             <h2 className="text- sm:text-base font-extralight md:block text-[#F4F3F1] md:text-xl self-center md:font-light lg:text-2xl text-center">
-              Digital Sizing Card
+              Dashboard
             </h2>
           </div>
 
@@ -64,7 +61,7 @@ const Featured = () => {
               <span className="text-[#F5672D] pr-1 text-xs md:text-xl self-center lg:pr-2">
                 +
               </span>
-              Designed and built in React
+              Built with Next.js, TypeScript, and Tailwind
             </motion.p>
 
             <motion.p
@@ -74,7 +71,7 @@ const Featured = () => {
               <span className="text-[#F5672D] pr-1 text-xs self-center md:text-xl lg:pr-2">
                 +
               </span>
-              Built-in AI size recommendations
+              UI powered by shadcn/ui components
             </motion.p>
 
             <motion.p
@@ -84,12 +81,12 @@ const Featured = () => {
               <span className="text-[#F5672D] pr-1  text-xs self-center md:text-xl lg:pr-2">
                 +
               </span>
-              Avatar and sharable digital card
+              Clear, readable data presentation
             </motion.p>
           </motion.div>
 
           <a
-            href="https://www.cartlag.com"
+            href="https://dashboard-psi-topaz.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-5 sm:ml-11 self-center  

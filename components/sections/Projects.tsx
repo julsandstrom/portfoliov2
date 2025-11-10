@@ -32,8 +32,8 @@ export default function Projects() {
                 src={p.image}
                 alt={p.title}
                 className={`h-[220px] w-[300px] sm:h-[350px] sm:w-[400px] md:h-[441px] md:w-[600px] object-cover transition-[filter] duration-600 
-                    ${isActive ? ' brightness-40' : ' brightness-100'}
-                    group-hover:brightness-40`}
+                    ${isActive ? ' brightness-10' : ' brightness-100'}
+                    group-hover:brightness-10`}
               />
 
               <div
