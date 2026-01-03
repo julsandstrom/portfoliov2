@@ -115,8 +115,8 @@ const Featured = () => {
     text-[#F5672D] ring-1 ring-[rgba(245,103,45,0.6)]
     transition-transform duration-300 ease-out
     hover:scale-[0.98] hover:text-[#ECA85A]
-    focus:outline-none
-    before:absolute before:-inset-1 before:content-[''] motion-reduce:transition-none motion-reduce:hover:scale-100
+
+    before:absolute before:-inset-1 before:content-[''] motion-reduce:transition-none motion-reduce:hover:scale-100  focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
   "
           >
             <span className="relative z-10">Try it out</span>

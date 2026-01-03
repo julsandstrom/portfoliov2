@@ -11,7 +11,7 @@ export default function Home() {
       {" "}
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 bg-black text-white p-2 z-50"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 bg-black text-white p-4 z-100  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
       >
         Skip to main content
       </a>
