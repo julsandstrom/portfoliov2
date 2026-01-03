@@ -1,6 +1,7 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -19,15 +20,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 bg-[#0B0B0B]/80 z-50 ">
       <div className="mx-auto flex  items-center justify-between px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
-        {/* <span className="text-xs sm:text-base md:text-xl tracking-[0.03em]">
-          Julian Sandstrom
-        </span> */}
-        <a
+        <Link
           href="/#home"
-          className="hover:text-[#F5672D] transition-colors text-xs sm:text-base md:text-xl tracking-[0.03em]"
+          className="hover:text-[#F5672D] transition-colors text-xs sm:text-base md:text-xl tracking-[0.03em]  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
         >
           Julian Sandstrom
-        </a>
+        </Link>
 
         <button
           aria-label="Open navigation"
@@ -37,31 +35,37 @@ export default function Header() {
         >
           <span
             className={`h-0.5 sm:h-1 self-start transition-all duration-300 ${
-              open ? 'w-5 sm:w-9 bg-[#F5672D]' : 'w-4 sm:w-7 bg-[#F4F3F1]'
+              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#F4F3F1]"
             }`}
           />
           <span
             className={`h-0.5 w-5 sm:w-9 sm:h-1 transition-all duration-300 ${
-              open ? 'bg-[#ECA85A]' : 'bg-[#F4F3F1]'
+              open ? "bg-[#ECA85A]" : "bg-[#F4F3F1]"
             }`}
           />
           <span
             className={`h-0.5 sm:h-1 self-end transition-all duration-300 ${
-              open ? 'w-5 sm:w-9 bg-[#F5672D]' : 'w-4 sm:w-7 bg-[#F4F3F1]'
+              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#F4F3F1]"
             }`}
           />
         </button>
 
         <nav className="hidden md:flex gap-16 font-light tracking-[0.04em] text-base md:text-xl">
-          <a href="/#work" className="hover:text-[#F5672D] transition-colors">
+          <Link
+            href="/#work"
+            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+          >
             Work
-          </a>
-          <a href="/#about" className="hover:text-[#F5672D] transition-colors">
+          </Link>
+          <Link
+            href="/#about"
+            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+          >
             About
-          </a>
+          </Link>
           <a
             href="mailto:juliansandstrom@gmail.com"
-            className="hover:text-[#F5672D] transition-colors"
+            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
           >
             Contact
           </a>
@@ -73,8 +77,8 @@ export default function Header() {
           fixed inset-0 z-50 md:hidden
           ${
             showMenu
-              ? 'opacity-100 pointer-events-auto'
-              : 'opacity-0 pointer-events-none'
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
           }
           transition-opacity duration-300
         `}
@@ -104,51 +108,60 @@ export default function Header() {
 
           <nav className="font-grotesk mt-8 flex flex-col items-center gap-6 sm:gap-8 text-base sm:text-xl">
             <div className=" flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1]">
-              {' '}
-              <a
+              {" "}
+              <Link
                 href="/#work"
                 onClick={toggleMenu}
-                className="hover:text-[#F5672D] transition-colors"
+                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
-                {' '}
-                Work{' '}
-              </a>{' '}
-              <img
+                {" "}
+                Work{" "}
+              </Link>{" "}
+              <Image
                 src="/icons/yellow-arrow-right.svg"
-                alt="yellow arrow"
+                aria-hidden="true"
+                alt=""
+                width={12}
+                height={12}
                 className="w-3  ml-2"
               />
-            </div>{' '}
+            </div>{" "}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
-              {' '}
-              <a
+              {" "}
+              <Link
                 href="/#about"
                 onClick={toggleMenu}
-                className="hover:text-[#F5672D] transition-colors"
+                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
-                {' '}
-                About{' '}
-              </a>{' '}
-              <img
+                {" "}
+                About{" "}
+              </Link>{" "}
+              <Image
                 src="/icons/yellow-arrow-right.svg"
-                alt="yellow arrow"
+                aria-hidden="true"
+                alt=""
+                width={12}
+                height={12}
                 className="w-3  ml-2"
               />
-            </div>{' '}
+            </div>{" "}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
-              {' '}
+              {" "}
               <a
                 href="mailto:juliansandstrom@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F5672D] transition-colors"
+                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
-                {' '}
-                Contact{' '}
-              </a>{' '}
-              <img
+                {" "}
+                Contact{" "}
+              </a>{" "}
+              <Image
                 src="/icons/yellow-arrow-right.svg"
-                alt="yellow arrow"
+                aria-hidden="true"
+                alt=""
+                width={12}
+                height={12}
                 className="w-3  ml-2"
               />
             </div>

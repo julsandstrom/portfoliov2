@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-[#0B0B0B] py-6 md:py-11 lg:py-16  tracking-[0.03em] sm:px-11 lg:px-14">
@@ -14,12 +16,14 @@ const Footer = () => {
           <div className="flex justify-center gap-10 md:gap-20 lg:gap-28 mt-1">
             <a
               href="mailto:juliansandstrom@gmail.com"
-              className="flex items-center justify-center text-[#0B0B0B] text-xs transition-transform duration-300 hover:scale-110"
+              className="flex items-center justify-center text-[#0B0B0B] text-xs transition-transform duration-300 hover:scale-110  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
-              {' '}
-              <img
+              {" "}
+              <Image
                 src="/icons/Gmail_icon_(2020).svg"
                 alt="Gmail"
+                height={20}
+                width={20}
                 className="ml-2 w-8 sm:w-11  h-auto"
                 loading="eager"
               />
@@ -28,12 +32,14 @@ const Footer = () => {
               href="https://se.linkedin.com/in/juliansandstrom"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center text-[#F4F3F1] text-xs transition-transform duration-300 hover:scale-110"
+              className="flex items-center justify-center text-[#F4F3F1] text-xs transition-transform duration-300 hover:scale-110  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
-              {' '}
-              <img
+              {" "}
+              <Image
                 src="/icons/LinkedIn_icon.svg"
                 alt="LinkedIn"
+                height={20}
+                width={20}
                 className="ml-2 w-8 sm:w-10   h-auto"
                 loading="eager"
               />
