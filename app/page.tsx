@@ -17,7 +17,7 @@ export default function Home() {
       </a>
       <div id="home" className="min-h-screen bg-[#0B0B0B] text-[#F4F3F1]">
         <Header />
-        <main id="main" tabIndex={-1}>
+        <main tabIndex={-1}>
           <Hero />
 
           <Featured />

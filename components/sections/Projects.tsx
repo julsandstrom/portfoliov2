@@ -1,11 +1,9 @@
 "use client";
-import { useState } from "react";
+
 import { projects } from "../../lib/data/project";
 import Image from "next/image";
 
 export default function Projects() {
-  const [active, setActive] = useState<string | null>(null);
-
   return (
     <section
       id="work"
@@ -16,64 +14,50 @@ export default function Projects() {
       </h2>
 
       <ul
-        aria-label="Projects carousel"
+        aria-label="my projects"
+        tabIndex={-1}
         className="mt-6 sm:mt-14 md:mt-20 flex gap-4 sm:gap-10 pb-6  scroll-smooth motion-reduce:scroll-auto snap-x snap-mandatory overflow-x-auto scrollbar-visible "
       >
         {projects.map((p) => {
-          const isActive = active === p.title;
           return (
-            <li key={p.title} className="shrink-0 snap-start">
+            <li key={p.title} className="shrink-0 snap-start  pb-6 rounded-xs ">
               <article
-                className="group relative w-[300px] sm:w-[400px] md:w-[600px] rounded-[1px] overflow-hidden  "
-                onMouseEnter={() => setActive(p.title)}
-                onMouseLeave={() => setActive(null)}
-                onClick={() =>
-                  setActive((v) => (v === p.title ? null : p.title))
-                }
+                className="     pb-4 relative w-[300px] sm:w-[400px] md:w-[600px]
+    rounded-[1px] border border-gray-600 overflow-hidden
+    transition-colors duration-200
+
+    hover:border-[#F5672D] hover:bg-white/5
+    focus-within:border-[#F5672D] focus-within:bg-white/5"
               >
-                <Image
-                  height={600}
-                  width={600}
-                  src={p.image}
-                  alt=""
-                  className={`h-[220px] w-[300px] sm:h-[350px] sm:w-[400px] md:h-[441px] md:w-[600px] object-cover transition-[filter] duration-600 
-                    ${isActive ? " brightness-10" : " brightness-100"}
-                    group-hover:brightness-10`}
-                />
-
-                <div
-                  className={`pointer-events-none absolute inset-0 flex items-center justify-center mb-11
-                    px-4 text-center  transition-opacity duration-300
-                    ${isActive ? "opacity-100 " : "opacity-0"}
-                    group-hover:opacity-100`}
+                <a
+                  href={p.url}
+                  className="block     focus-visible:outline-none
+              "
                 >
-                  <div className="text-[#F4F3F1] text-base sm:text-xl md:text-3xl">
-                    <h3 className="opacity-90 font-bold mb-5 md:mb-11 ">
-                      {p.overlayTitle}
-                    </h3>
-                    <p className=" font-extralight md:max-w-[500px]">
-                      {p.overlayBody}
-                    </p>
-                  </div>
-                </div>
+                  <Image
+                    height={600}
+                    width={600}
+                    src={p.image}
+                    alt=""
+                    aria-hidden="true"
+                    className="h-[220px] w-[300px] sm:h-[350px] sm:w-[400px] md:h-[441px] md:w-[600px] object-cover "
+                  />
 
-                <div className="flex items-center justify-between px-2 py-3 md:py-5">
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-2xl sm:text-3xl  font-light text-[#F5672D] flex cursor-pointer hover:text-[#ECA85A]  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
-                  >
-                    {p.title}
+                  <div className="flex items-center px-4 py-3">
+                    <h3 className="text-2xl sm:text-3xl  font-light text-[#F5672D] flex  ">
+                      {p.title}{" "}
+                    </h3>
                     <Image
                       height={600}
                       width={600}
                       src="/icons/yellow-arrow-left.svg"
                       alt=""
+                      aria-hidden="true"
                       className="w-3 sm:w-5  ml-2"
                     />
-                  </a>
-                </div>
+                  </div>
+                  <p className="px-4">{p.overlayBody}</p>
+                </a>
               </article>
             </li>
           );

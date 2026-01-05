@@ -2,6 +2,7 @@ export const projects = [
   {
     title: "Cartlag",
     image: "/images/CartlagMobile.png",
+
     overlayTitle: "A body measurement app",
     overlayBody:
       "Generate a personal size card you can download, update, and reuse across brands for accurate fit.",
@@ -12,7 +13,7 @@ export const projects = [
     image: "/images/DriftusMobile.png",
     overlayTitle: "A chat app",
     overlayBody:
-      "showing only the latest message, with AI stepping in when words run out.",
+      "A chat app showing only the latest message, with AI stepping in when words run out.",
     url: "https://driftus.netlify.app/login",
   },
   {
@@ -20,7 +21,7 @@ export const projects = [
     image: "/images/PuppeteerMobile.png",
     overlayTitle: "A quiz about someone you know",
     overlayBody:
-      "in a minimalist yet carnival-inspired quiz on perception and identity.",
+      "A quiz about someone you know in a minimalist yet carnival-inspired quiz on perception and identity.",
     url: "https://puppeteerme.com/",
   },
   {
@@ -28,7 +29,7 @@ export const projects = [
     image: "/images/MekojaMobile.png",
     overlayTitle: "An interactive platform",
     overlayBody:
-      "to rank your values and share or receive guidance from like-minded people.",
+      "An interactive platform to rank your values and share or receive guidance from like-minded people.",
     url: "https://julsandstrom.github.io/mekoja/",
   },
 
@@ -37,7 +38,7 @@ export const projects = [
     image: "/images/ReturnCascadeMobile.png",
     overlayTitle: "A juggling-inspired FPS in the snow",
     overlayBody:
-      "push enemies, solve puzzles, and balance your overheating weapon like keeping three balls in the air.",
+      "A juggling-inspired FPS set in the snow, where you push enemies and solve puzzles.",
     url: "https://youtu.be/Vfq_1EhHR1I",
   },
 ];

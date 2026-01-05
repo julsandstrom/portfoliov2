@@ -19,14 +19,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 bg-[#0B0B0B]/80 z-50 ">
-      <div className="mx-auto flex  items-center justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
-        {/* <Link
-          href="/#home"
-          className="hover:text-[#F5672D] transition-colors text-xs sm:text-base md:text-xl tracking-[0.03em]  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
-        >
-          Julian Sandstrom
-        </Link> */}
-
+      <div className="mx-auto flex  items-center justify-end md:justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
         <button
           aria-label="Open navigation"
           aria-expanded={open}

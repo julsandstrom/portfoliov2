@@ -21,17 +21,25 @@ const Hero = () => {
   }, [inView, controls, shouldReduceMotion]);
 
   return (
-    <section className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3">
+    <section
+      id="main"
+      aria-labelledby="heroTitle"
+      className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3"
+    >
       <div className="relative inline-block">
         <Image
           src="/images/hero-title.svg"
           alt=""
+          aria-hidden="true"
           width={900}
           height={200}
           priority
           className="w-70 sm:w-[500px] md:w-[700px] lg:w-[900px] h-auto"
         />
-        <h1 className="sr-only">Frontend Developer</h1>
+
+        <p className="sr-only" id="heroRole">
+          Frontend Developer
+        </p>
         <p
           aria-hidden="true"
           className="font-grotesk text-sm sm:text-xl md:text-2xl lg:text-3xl font-extralight opacity-60 uppercase tracking-[0.4em] text-[#ECECEC] mt-1 sm:mt-6 md:mt-7 lg:mt-14 text-right"
@@ -42,7 +50,7 @@ const Hero = () => {
           src="/images/PixelJulle.png"
           width={297}
           height={297}
-          alt=""
+          alt="Pixel avatar portrait"
           className="w-20 z-10 absolute left-10 sm:w-40 sm:left-16 top-[-9px] sm:top-[-15px] md:w-[210px] lg:w-[297px] md:left-24 lg:left-28 md:-top-5 lg:-top-8"
         />
       </div>
@@ -57,12 +65,13 @@ const Hero = () => {
               ? undefined
               : {
                   hidden: {},
-                  visible: { transition: { staggerChildren: 0.8 } },
+                  visible: { transition: { staggerChildren: 0.6 } },
                 }
           }
         >
-          <motion.span
-            className="text-lg sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-[0.03em] inline-block"
+          <motion.h1
+            id="heroTitle"
+            className="text-lg  md:text-2xl  font-semibold tracking-[0.03em] inline-block"
             variants={
               shouldReduceMotion
                 ? undefined
@@ -71,16 +80,16 @@ const Hero = () => {
                     visible: {
                       opacity: 1,
                       y: 0,
-                      transition: { duration: 2 },
+                      transition: { duration: 0.6 },
                     },
                   }
             }
           >
-            Building interfaces
-          </motion.span>
+            Julian Sandström
+          </motion.h1>
           &nbsp;&nbsp;
           <motion.span
-            className="opacity-70 text-xs sm:text-base md:text-xl lg:text-3xl lg:ml-2 font-thin inline-block"
+            className="opacity-70 text-xs sm:text-base md:text-xl lg:ml-2 font-thin inline-block"
             variants={
               shouldReduceMotion
                 ? undefined
@@ -95,8 +104,28 @@ const Hero = () => {
                   }
             }
           >
-            that feel alive
+            Portfolio
           </motion.span>
+          <motion.a
+            href="#work"
+            className="text-xs sm:text-lg  block mx-auto w-fit mt-7 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
+                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]  hover:text-[#ECA85A]
+    focus-visible:text-[#ECA85A] border p-2 rounded-xs"
+            variants={
+              shouldReduceMotion
+                ? undefined
+                : {
+                    hidden: { opacity: 0, y: 0 },
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                      transition: { duration: 0.6 },
+                    },
+                  }
+            }
+          >
+            View Projects
+          </motion.a>
         </motion.div>
       </div>
     </section>

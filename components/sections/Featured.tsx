@@ -109,14 +109,25 @@ const Featured = () => {
             aria-label="View dashboard demo"
             href="https://dashboard-psi-topaz.vercel.app/"
             rel="noopener noreferrer"
-            className="ml-5 sm:ml-11 self-center  
-    group relative  mt-6 sm:mt-8   lg:mt-12 md:ml-0 md:mt-8 inline-flex  w-fit items-center
-    rounded-[1px] px-5 py-2  text-sm sm:text-lg  md:px-6 md:py-3 font-normal tracking-[0.03em]
-    text-[#F5672D] ring-1 ring-[rgba(245,103,45,0.6)]
-    transition-transform duration-300 ease-out
-    hover:scale-[0.98] hover:text-[#ECA85A]
+            className=" mt-6 sm:mt-8   lg:mt-12 
+    ml-5 sm:ml-11 self-center
+    inline-flex w-fit items-center
+    rounded-[1px] px-5 py-2 text-sm sm:text-lg md:px-6 md:py-3
+    font-normal tracking-[0.03em]
+    text-[#F5672D]
+    ring-1 ring-[rgba(245,103,45,0.6)]
+    bg-transparent
+    transition-colors duration-200
 
-    before:absolute before:-inset-1 before:content-[''] motion-reduce:transition-none motion-reduce:hover:scale-100  focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
+    hover:text-[#ECA85A]
+    hover:bg-[rgba(245,103,45,0.08)]
+    hover:ring-[rgba(245,103,45,0.9)]
+
+    focus-visible:outline-none
+    focus-visible:text-[#ECA85A]
+    focus-visible:bg-[rgba(245,103,45,0.08)]
+    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
   "
           >
             <span className="relative z-10">Try it out</span>

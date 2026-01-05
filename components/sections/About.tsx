@@ -11,63 +11,76 @@ const About = () => {
         About
       </h2>
       <div className="mt-6 md:mt-20 lg:max-w-4xl text-center mx-auto block 2xl:mx-0  2xl:max-w-5xl 2xl:ml-48 ">
-        <p className="font-grotesk mt-6 sm:mt-11 text-lg sm:text-2xl md:text-3xl  tracking-[0.03em] text-[#1C1C1C] text-center 2xl:text-start">
+        <h3 className="font-grotesk mt-6 sm:mt-11 text-lg sm:text-2xl md:text-3xl  tracking-[0.03em] text-[#1C1C1C] text-center 2xl:text-start">
           I value code that reads like design
-        </p>
+        </h3>
         <p className="font-grotesk tracking-[0.03em] font-light text-sm sm:text-xl md:text-2xl   text-[#1C1C1C] text-right 2xl:text-center">
           and design that works like code.
         </p>
       </div>
 
-      <ul className="mt-16 sm:mt-24 md:mt-32 flex  justify-center 2xl:justify-around place-items-end gap-8 md:gap-24 sm:gap-16 lg:gap-32 text-sm text-[#1C1C1C]/70">
-        <li>
+      <figure className="mt-16 sm:mt-24 md:mt-32     gap-8 md:gap-24 sm:gap-16 lg:gap-32 text-sm text-[#1C1C1C]/70">
+        {" "}
+        <figcaption className="sr-only">
+          Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
+        </figcaption>
+        <div
+          aria-hidden="true"
+          className="flex items-end justify-center 2xl:justify-around place-items-end gap-8"
+        >
           <Image
             src="/icons/Nextjs-logo.svg"
-            alt="Next.js"
+            alt=""
+            aria-hidden="true"
             height={30}
             width={30}
-            className=" w-10 sm:w-16 md:w-20"
+            className=" w-10 sm:w-16 md:w-20 h-fit"
           />
-        </li>
 
-        <li>
           <Image
             src="/icons/Tailwind_CSS_logo_with_dark_text.svg"
-            alt="Tailwind CSS"
+            alt=""
+            aria-hidden="true"
             height={30}
             width={30}
-            className="ml-2 w-20 sm:w-28 md:w-36"
+            className="ml-2 h-fit w-20 sm:w-28 md:w-36"
           />
-        </li>
 
-        <li className="flex items-end justify-center">
-          <Image
-            src="/icons/React-icon.svg"
-            alt=""
-            height={30}
-            width={30}
-            className="ml-2 w-3 sm:w-5 md:w-7"
-          />{" "}
-          <span className="text-base sm:text-sm md:text-xl font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 align-bottom self-end  leading-none">
+          <div className="flex items-end justify-center">
+            <Image
+              src="/icons/React-icon.svg"
+              alt=""
+              aria-hidden="true"
+              height={30}
+              width={30}
+              className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+            />{" "}
+            <span
+              aria-hidden="true"
+              className="text-xs sm:text-sm md:text-xl font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80  leading-none"
+            >
+              React
+            </span>
+          </div>
+          <div className="flex items-end justify-center">
             {" "}
-            React
-          </span>
-        </li>
-        <li className="flex items-end justify-center">
-          {" "}
-          <Image
-            src="/icons/Typescript_logo_2020.svg"
-            alt=""
-            height={30}
-            width={30}
-            className="ml-2 w-3 sm:w-4 md:w-6 "
-          />
-          <span className="text-[11px] sm:text-sm md:text-xl  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none">
-            {" "}
-            TypeScript
-          </span>
-        </li>
-      </ul>
+            <Image
+              src="/icons/Typescript_logo_2020.svg"
+              alt=""
+              aria-hidden="true"
+              height={30}
+              width={30}
+              className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+            />
+            <span
+              aria-hidden="true"
+              className="text-xs sm:text-sm md:text-xl  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none"
+            >
+              TypeScript
+            </span>
+          </div>
+        </div>
+      </figure>
       <p className="mt-16 sm:mt-24 md:mt-32 font-grotesk font-light mx-auto block  tracking-[0.03em] text-base sm:text-xl   text-[#1C1C1C] max-w-[350px] sm:max-w-[450px] md:max-w-xl lg:max-w-2xl ">
         {" "}
         A background in film production and flight coordination, combining
@@ -75,11 +88,21 @@ const About = () => {
       </p>
       <a
         href="mailto:juliansandstrom@gmail.com"
-        className="group w-fit mx-auto block  mt-6 sm:mt-11 md:mt-14 rounded-[1px] bg-[#0D0D0D] px-5 sm:px-7 py-2 md:py-3 md:px-6 
-        text-sm sm:text-lg  tracking-[0.03em] font-normal text-[#EAE6E1] transition-transform duration-300 ease-out
-    hover:scale-[0.98] hover:text-[#ECA85A]
-    focus:outline-none
-    motion-reduce:transition-none motion-reduce:hover:scale-100  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+        aria-label="Contact Julian by email"
+        className="
+    w-fit mx-auto block mt-6 sm:mt-11 md:mt-14
+    rounded-[1px] bg-[#0D0D0D]
+    px-5 sm:px-7 py-2 md:py-3 md:px-6
+    text-sm sm:text-lg tracking-[0.03em]
+    text-[#EAE6E1]
+
+    hover:bg-[#1f1f1f]
+    hover:text-[#ECA85A]
+
+    focus-visible:outline-none
+    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
+  "
       >
         Contact me
       </a>

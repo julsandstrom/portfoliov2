@@ -3,49 +3,78 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-[#0B0B0B] py-6 md:py-11 lg:py-16  tracking-[0.03em] sm:px-11 lg:px-14">
-      <div className="mx-auto flex  items-start justify-between px-5 ">
-        <div className="flex flex-col">
-          <p className="text-sm sm:text-lg md:text-xl  font-medium text-[#F5672D] self-center">
+      <div className="mx-auto flex  items-center justify-between px-5 ">
+        <dl className="flex flex-col">
+          <dt className="text-base sm:text-lg md:text-xl  font-medium text-[#F5672D] self-center">
             Based in
-          </p>
-          <p className="text-sm sm:text-lg md:text-xl  text-[#F4F3F1] font-extralight">
+          </dt>
+          <dd className="text-base sm:text-lg md:text-xl  text-[#F4F3F1] font-extralight">
             Stockholm
-          </p>
-        </div>
-        <div className="text-right flex flex-col gap-1">
-          <div className="flex justify-center gap-10 md:gap-20 lg:gap-28 mt-1">
+          </dd>
+        </dl>
+        <nav
+          aria-label="Footer contact links"
+          className="text-right flex flex-col gap-1"
+        >
+          <div className="flex items-center justify-center gap-10 md:gap-20 lg:gap-28 mt-1">
             <a
+              aria-label="Email Julian Sandstrom"
               href="mailto:juliansandstrom@gmail.com"
-              className="flex items-center justify-center text-[#0B0B0B] text-xs transition-transform duration-300 hover:scale-110  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+              className="    group h-16 flex flex-col gap-2 items-center justify-center
+    text-[#F4F3F1] text-xs
+    cursor-pointer
+
+    hover:text-[#ECA85A]
+    focus-visible:text-[#ECA85A]
+
+    hover:bg-white/5
+    focus-visible:bg-white/5
+
+    focus-visible:outline-none
+    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
-              {" "}
               <Image
                 src="/icons/Gmail_icon_(2020).svg"
-                alt="Gmail"
+                alt=""
+                aria-hidden="true"
                 height={20}
                 width={20}
-                className="ml-2 w-8 sm:w-11  h-auto"
-                loading="eager"
-              />
+                className=" w-8 sm:w-11  h-20 "
+              />{" "}
+              <span className="text-center text-base sm:text-lg">Gmail</span>
             </a>
             <a
               href="https://se.linkedin.com/in/juliansandstrom"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center text-[#F4F3F1] text-xs transition-transform duration-300 hover:scale-110  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+              aria-label="Julian Sandstrom on LinkedIn"
+              className="    group h-16 flex flex-col gap-2 items-center justify-center
+    text-[#F4F3F1] text-xs
+    cursor-pointer
+
+    hover:text-[#ECA85A]
+    focus-visible:text-[#ECA85A]
+
+    hover:bg-white/5
+    focus-visible:bg-white/5
+
+    focus-visible:outline-none
+    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
-              {" "}
               <Image
                 src="/icons/LinkedIn_icon.svg"
-                alt="LinkedIn"
+                alt=""
+                aria-hidden="true"
                 height={20}
                 width={20}
-                className="ml-2 w-8 sm:w-10   h-auto"
-                loading="eager"
+                className=" w-8 sm:w-10   h-20"
               />
+              <span className="text-center text-base sm:text-lg">
+                Linked In
+              </span>
             </a>
           </div>
-        </div>
+        </nav>
       </div>
     </footer>
   );
