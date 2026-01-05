@@ -101,7 +101,7 @@ const About = () => {
 
     focus-visible:outline-none
     focus-visible:ring-2 focus-visible:ring-[#F5672D]
-    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
+    focus-visible:ring-offset-4 focus-visible:ring-offset-[#EAE6E1]
   "
       >
         Contact me

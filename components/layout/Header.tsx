@@ -24,7 +24,9 @@ export default function Header() {
           aria-label="Open navigation"
           aria-expanded={open}
           onClick={toggleMenu}
-          className="group flex h-9 flex-col items-center justify-center gap-1.5 sm:gap-2 rounded-[0.5px] cursor-pointer md:hidden"
+          className="group flex h-9 flex-col items-center justify-center gap-1.5 sm:gap-2 rounded-[0.5px] cursor-pointer md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
+                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  hover:text-[#ECA85A]
+    focus-visible:text-[#ECA85A] "
         >
           <span
             className={`h-0.5 sm:h-1 self-start transition-all duration-300 ${

@@ -22,16 +22,20 @@ export default function Projects() {
           return (
             <li key={p.title} className="shrink-0 snap-start  pb-6 rounded-xs ">
               <article
-                className="     pb-4 relative w-[300px] sm:w-[400px] md:w-[600px]
-    rounded-[1px] border border-gray-600 overflow-hidden
+                className="      pb-4 relative w-[300px] sm:w-[400px] md:w-[600px]
+    rounded-[1px] border border-gray-600
     transition-colors duration-200
 
     hover:border-[#F5672D] hover:bg-white/5
-    focus-within:border-[#F5672D] focus-within:bg-white/5"
+    focus-within:border-[#F5672D] focus-within:bg-white/5
+
+    focus-within:outline-none
+    focus-within:ring-2 focus-within:ring-[#F5672D]
+    focus-within:ring-offset-4 focus-within:ring-offset-[#0B0B0B]"
               >
                 <a
                   href={p.url}
-                  className="block     focus-visible:outline-none
+                  className="block   focus-visible:outline-none
               "
                 >
                   <Image

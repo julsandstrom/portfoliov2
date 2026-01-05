@@ -109,7 +109,7 @@ const Hero = () => {
           <motion.a
             href="#work"
             className="text-xs sm:text-lg  block mx-auto w-fit mt-7 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
-                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]  hover:text-[#ECA85A]
+                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  hover:text-[#ECA85A]
     focus-visible:text-[#ECA85A] border p-2 rounded-xs"
             variants={
               shouldReduceMotion

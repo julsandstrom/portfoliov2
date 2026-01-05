@@ -44,6 +44,7 @@ const Featured = () => {
         <Image
           src="/images/DashPage.png"
           alt=""
+          aria-hidden="true"
           width={1600}
           height={900}
           className="w-full md:w-1/2 h-auto"
@@ -108,7 +109,6 @@ const Featured = () => {
           <a
             aria-label="View dashboard demo"
             href="https://dashboard-psi-topaz.vercel.app/"
-            rel="noopener noreferrer"
             className=" mt-6 sm:mt-8   lg:mt-12 
     ml-5 sm:ml-11 self-center
     inline-flex w-fit items-center
@@ -127,7 +127,7 @@ const Featured = () => {
     focus-visible:text-[#ECA85A]
     focus-visible:bg-[rgba(245,103,45,0.08)]
     focus-visible:ring-2 focus-visible:ring-[#F5672D]
-    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] border p-2
   "
           >
             <span className="relative z-10">Try it out</span>
