@@ -85,11 +85,11 @@ const Hero = () => {
                   }
             }
           >
-            Julian Sandström
+            Accessibility Specialist
           </motion.h1>
           &nbsp;&nbsp;
           <motion.span
-            className="opacity-70 text-xs sm:text-base md:text-xl lg:ml-2 font-thin inline-block"
+            className="opacity-70 text-xs sm:text-base md:text-xl lg:ml-2 font-light inline-block"
             variants={
               shouldReduceMotion
                 ? undefined
@@ -104,28 +104,8 @@ const Hero = () => {
                   }
             }
           >
-            Portfolio
+            Julian Sandström
           </motion.span>
-          <motion.a
-            href="#work"
-            className="text-xs sm:text-lg  block mx-auto w-fit mt-7 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
-                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  hover:text-[#ECA85A]
-    focus-visible:text-[#ECA85A] border p-2 rounded-xs"
-            variants={
-              shouldReduceMotion
-                ? undefined
-                : {
-                    hidden: { opacity: 0, y: 0 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.6 },
-                    },
-                  }
-            }
-          >
-            View Projects
-          </motion.a>
         </motion.div>
       </div>
     </section>
