@@ -47,7 +47,7 @@ export default function Header() {
 
         <nav className="hidden md:flex  gap-16 font-light tracking-[0.04em] text-base md:text-xl">
           <Link
-            href="/#home"
+            href="/"
             className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             Home
@@ -99,13 +99,13 @@ export default function Header() {
             ×
           </button>
 
-          <a
-            href="#home"
+          <Link
+            href="/"
             onClick={toggleMenu}
             className="text-center text-base sm:text-xl font-extralight text-[#F5672D] hover:text-[#F4F3F1] transition-colors"
           >
             Home
-          </a>
+          </Link>
 
           <nav className="font-grotesk mt-8 flex flex-col items-center gap-6 sm:gap-8 text-base sm:text-xl">
             <div className=" flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1]">

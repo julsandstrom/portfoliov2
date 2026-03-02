@@ -15,20 +15,15 @@ export default function Home() {
       >
         Skip to main content
       </a>
-      <div id="home" className="min-h-screen bg-[#0B0B0B] text-[#F4F3F1]">
-        <Header />
-        <main tabIndex={-1}>
-          <Hero />
+      <main tabIndex={-1}>
+        <Hero />
 
-          <Featured />
+        <Featured />
 
-          <Projects />
+        <Projects />
 
-          <About />
-
-          <Footer />
-        </main>
-      </div>
+        <About />
+      </main>
     </>
   );
 }

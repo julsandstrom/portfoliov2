@@ -24,89 +24,55 @@ const Hero = () => {
     <section
       id="main"
       aria-labelledby="heroTitle"
-      className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[80vh] xl:min-h-screen flex flex-col items-center justify-center gap-3"
+      className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[40vh] md:min-h-[70vh]  flex flex-col items-center justify-center gap-3"
     >
-      <div className="relative inline-block">
+      <div className=" flex gap-5 w-full justify-center">
         <Image
-          src="/images/hero-title.svg"
-          alt=""
-          aria-hidden="true"
+          src="/images/profile.jpg"
+          alt="asasfasf"
           width={900}
           height={200}
           priority
-          className="w-70 sm:w-[500px] md:w-[700px] lg:w-[900px] h-auto"
-        />
-
-        <p className="sr-only" id="heroRole">
-          Frontend Developer
-        </p>
-        <p
-          aria-hidden="true"
-          className="font-grotesk text-sm sm:text-xl md:text-2xl lg:text-3xl font-extralight opacity-60 uppercase tracking-[0.4em] text-[#ECECEC] mt-1 sm:mt-6 md:mt-7 lg:mt-14 text-right"
-        >
-          Developer
-        </p>
-        <Image
-          src="/images/PixelJulle.png"
-          width={297}
-          height={297}
-          alt="Pixel avatar portrait"
-          className="w-20 z-10 absolute left-10 sm:w-40 sm:left-16 top-[-9px] sm:top-[-15px] md:w-[210px] lg:w-[297px] md:left-24 lg:left-28 md:-top-5 lg:-top-8"
-        />
-      </div>
-
-      <div className="mt-11 sm:mt-28 lg:mt-40 text-center">
-        <motion.div
-          ref={ref}
-          initial={shouldReduceMotion ? false : "hidden"}
-          animate={controls}
-          variants={
-            shouldReduceMotion
-              ? undefined
-              : {
-                  hidden: {},
-                  visible: { transition: { staggerChildren: 0.6 } },
-                }
-          }
-        >
-          <motion.h1
-            id="heroTitle"
-            className="text-lg  md:text-2xl  font-semibold tracking-[0.03em] inline-block"
-            variants={
-              shouldReduceMotion
-                ? undefined
-                : {
-                    hidden: { opacity: 0, y: 0 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { duration: 0.6 },
-                    },
-                  }
-            }
+          className=" w-36 md:w-64 rounded-xl"
+        />{" "}
+        <div className="flex flex-col md:justify-center gap-2 md:ml-5">
+          {" "}
+          <h1 className="font-bold md:text-2xl"> Accessibility Specialist</h1>
+          <p className="font-thin md:text-lg">Julian Sandström</p>
+          <a
+            aria-label="View dashboard demo"
+            href="#work"
+            className="mt-3 md:mt-6
+              inline-flex w-fit items-center
+              rounded-[1px] px-5 py-2 text-sm sm:text-lg md:px-6 md:py-3
+              font-normal tracking-[0.03em]
+              text-[#F5672D]
+              ring-1 ring-[rgba(245,103,45,0.6)]
+              bg-transparent
+              transition-colors duration-200
+          
+              hover:text-[#ECA85A]
+              hover:bg-[rgba(245,103,45,0.08)]
+              hover:ring-[rgba(245,103,45,0.9)]
+          
+              focus-visible:outline-none
+              focus-visible:text-[#ECA85A]
+              focus-visible:bg-[rgba(245,103,45,0.08)]
+              focus-visible:ring-2 focus-visible:ring-[#F5672D]
+              focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] border p-2
+            "
           >
-            Accessibility Specialist
-          </motion.h1>
-          &nbsp;&nbsp;
-          <motion.span
-            className="opacity-70 text-xs sm:text-base md:text-xl lg:ml-2 font-light inline-block"
-            variants={
-              shouldReduceMotion
-                ? undefined
-                : {
-                    hidden: { opacity: 0, x: 0, y: -1 },
-                    visible: {
-                      opacity: 1,
-                      x: 0,
-                      y: -1,
-                      transition: { duration: 1, ease: "easeOut" },
-                    },
-                  }
-            }
-          >
-            Julian Sandström
-          </motion.span>
-        </motion.div>
+            <span className="relative z-10">See Projects</span>
+            <Image
+              src="/icons/yellow-arrow-right.svg"
+              alt=""
+              height={9}
+              width={9}
+              className="ml-2 w-[9px] sm:w-3  h-auto"
+              loading="eager"
+            />
+          </a>
+        </div>
       </div>
     </section>
   );

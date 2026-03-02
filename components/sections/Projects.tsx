@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <section
       id="work"
-      className="bg-[#0B0B0B] py-10 sm:py-20 md:pt-36 pl-5 sm:pl-11 lg:pl-14"
+      className="bg-[#0B0B0B] py-10 sm:py-20 md:pt-36 pl-5 sm:pl-11 lg:pl-14 "
     >
       <h2 className="font-grotesk text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#F4F3F1]">
         Projects
