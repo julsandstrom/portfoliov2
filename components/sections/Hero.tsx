@@ -26,16 +26,31 @@ const Hero = () => {
       aria-labelledby="heroTitle"
       className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[40vh] md:min-h-[70vh]  flex flex-col items-center justify-center gap-3"
     >
-      <div className=" flex gap-5 w-full justify-center">
+      <div className="relative flex gap-5 w-full justify-center">
+        {" "}
+        <div
+          aria-hidden="true"
+          className="
+      absolute
+      inset-10 md:inset-20
+      bg-linear-to-r
+      from-[#F5672D]/20
+      via-purple-500/20
+      to-transparent
+      blur-3xl
+      opacity-70
+      pointer-events-none
+    "
+        />
         <Image
           src="/images/profile.jpg"
           alt="asasfasf"
           width={900}
           height={200}
           priority
-          className=" w-36 md:w-64 rounded-xl"
+          className="relative w-36 md:w-64 rounded-xl"
         />{" "}
-        <div className="flex flex-col md:justify-center gap-2 md:ml-5">
+        <div className="flex flex-col justify-start  md:justify-center gap-2 md:ml-5">
           {" "}
           <h1 className="font-bold md:text-2xl"> Accessibility Specialist</h1>
           <p className="font-thin md:text-lg">Julian Sandström</p>

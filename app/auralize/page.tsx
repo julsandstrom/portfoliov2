@@ -109,10 +109,6 @@ const Page = () => {
         <div className="flex flex-col gap-2 px-6">
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-xl">What I learned</h3>
-            <p>
-              This was my first full application and revealed architectural
-              weaknesses:
-            </p>
           </div>
           <ul className="list-disc flex flex-col gap-2 pl-3 px-6">
             <li>
