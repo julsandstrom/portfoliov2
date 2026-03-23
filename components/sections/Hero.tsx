@@ -52,7 +52,7 @@ const Hero = () => {
         />{" "}
         <div className="flex flex-col justify-start  md:justify-center gap-2 md:ml-5">
           {" "}
-          <h1 className="font-bold md:text-2xl"> Accessibility Specialist</h1>
+          <h1 className="font-bold md:text-2xl"> Frontend Developer</h1>
           <p className="font-thin md:text-lg">Julian Sandström</p>
           <a
             aria-label="View dashboard demo"
