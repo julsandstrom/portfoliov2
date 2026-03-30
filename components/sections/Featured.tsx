@@ -29,7 +29,7 @@ const Featured = () => {
             </h3>
           </div>
 
-          <ul className="mt-6 self-start space-y-2 pl-5 text-sm font-extralight sm:mt-11 sm:space-y-4 sm:pl-11 sm:text-xl md:self-center md:space-y-6 md:pl-3 md:text-xl lg:mt-16 lg:ml-0 lg:space-y-8 lg:pl-0">
+          <ul className="mt-6 self-center space-y-2 pl-5 text-sm font-extralight sm:mt-11 sm:space-y-4 sm:pl-11 sm:text-xl md:self-center md:space-y-6 md:pl-3 md:text-xl lg:mt-16 lg:ml-0 lg:space-y-8 lg:pl-0">
             <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
