@@ -20,7 +20,7 @@ const Featured = () => {
 
         <div className="mt-5 flex h-auto w-full flex-col items-start justify-start md:mt-0 md:w-1/2 md:pr-11 lg:justify-center">
           <div className="flex flex-col justify-center self-center gap-2 md:gap-1">
-            <h2 className="self-center text-4xl font-extrabold leading-none text-[#F4F3F1] sm:text-5xl md:block md:text-4xl lg:text-5xl xl:text-6xl">
+            <h2 className="self-center text-3xl font-extrabold leading-none text-[#F4F3F1] sm:text-5xl md:block md:text-4xl lg:text-5xl xl:text-6xl">
               Data Presentation
             </h2>
 
