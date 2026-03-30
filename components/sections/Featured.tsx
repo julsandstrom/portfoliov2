@@ -1,134 +1,70 @@
 "use client";
-import {
-  motion,
-  useAnimation,
-  useInView,
-  useReducedMotion,
-  type Variants,
-} from "framer-motion";
-import { useEffect, useRef } from "react";
 
-const container: Variants = {
-  hidden: { opacity: 1, transition: { staggerChildren: 0 } },
-  visible: { opacity: 1, transition: { staggerChildren: 0.25 } },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 14 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
-};
 import Image from "next/image";
 
 const Featured = () => {
-  const shouldReduceMotion = useReducedMotion();
-  const controls = useAnimation();
-  const ref = useRef(null);
-
-  const inView = useInView(ref, {
-    amount: 0.9,
-    margin: "10% 0px -10% 0px",
-    once: true,
-  });
-
-  useEffect(() => {
-    if (shouldReduceMotion) return;
-    if (inView) controls.start("visible");
-  }, [inView, controls, shouldReduceMotion]);
-
   return (
     <section
       id="featured"
-      className=" text-[#0B0B0B] py-7 lg:py-20 tracking-[0.03em] "
+      className="py-7 tracking-[0.03em] text-[#0B0B0B] lg:py-20"
     >
-      <div className=" mx-auto   flex flex-col md:flex-row ">
+      <div className="mx-auto flex flex-col md:flex-row">
         <Image
           src="/images/DashPage.png"
           alt=""
           aria-hidden="true"
           width={1600}
           height={900}
-          className="w-full md:w-1/2 h-auto"
+          className="h-auto w-full md:w-1/2"
         />
-        <div className="flex flex-col items-start justify-start lg:justify-center w-full md:w-1/2 h-auto md:pr-11 mt-5 md:mt-0">
+
+        <div className="mt-5 flex h-auto w-full flex-col items-start justify-start md:mt-0 md:w-1/2 md:pr-11 lg:justify-center">
           <div className="flex flex-col justify-center self-center gap-2 md:gap-1">
-            <h2 className=" text-4xl sm:text-5xl md:block text-[#F4F3F1] md:text-4xl lg:text-5xl xl:text-6xl   font-extrabold self-center  justify-start   leading-none">
+            <h2 className="self-center text-4xl font-extrabold leading-none text-[#F4F3F1] sm:text-5xl md:block md:text-4xl lg:text-5xl xl:text-6xl">
               Data Presentation
             </h2>
-            <h3 className="text- sm:text-base font-extralight md:block text-[#F4F3F1] md:text-xl self-center md:font-light lg:text-2xl text-center">
+
+            <h3 className="self-center text-center text-[#F4F3F1] font-extralight sm:text-base md:block md:text-xl md:font-light lg:text-2xl">
               Dashboard
             </h3>
           </div>
 
-          <motion.ul
-            ref={ref}
-            className="mt-6 sm:mt-11 lg:mt-16 space-y-2 sm:space-y-4 md:space-y-6 lg:space-y-8   pl-5 sm:pl-11 md:pl-3 lg:ml-0 lg:pl-0 self-start md:self-center   text-sm sm:text-xl md:text-xl font-extralight"
-            initial={shouldReduceMotion ? false : "hidden"}
-            animate={shouldReduceMotion ? undefined : controls}
-            variants={shouldReduceMotion ? undefined : container}
-          >
-            <motion.li
-              className="text-[#F4F3F1] flex items-center h-fit"
-              variants={shouldReduceMotion ? undefined : item}
-            >
+          <ul className="mt-6 self-start space-y-2 pl-5 text-sm font-extralight sm:mt-11 sm:space-y-4 sm:pl-11 sm:text-xl md:self-center md:space-y-6 md:pl-3 md:text-xl lg:mt-16 lg:ml-0 lg:space-y-8 lg:pl-0">
+            <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
-                className="text-[#F5672D] pr-1 text-xs md:text-xl self-center lg:pr-2"
+                className="self-center pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
               >
                 +
               </span>
               Built with Next.js, TypeScript, and Tailwind
-            </motion.li>
+            </li>
 
-            <motion.li
-              className="text-[#F4F3F1] flex items-center h-fit"
-              variants={shouldReduceMotion ? undefined : item}
-            >
+            <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
-                className="text-[#F5672D] pr-1 text-xs self-center md:text-xl lg:pr-2"
+                className="self-center pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
               >
                 +
               </span>
               UI powered by shadcn/ui components
-            </motion.li>
+            </li>
 
-            <motion.li
-              className="text-[#F4F3F1] flex items-center h-fit "
-              variants={shouldReduceMotion ? undefined : item}
-            >
+            <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
-                className="text-[#F5672D] pr-1  text-xs self-center md:text-xl lg:pr-2"
+                className="self-center pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
               >
                 +
               </span>
               Clear, readable data presentation
-            </motion.li>
-          </motion.ul>
+            </li>
+          </ul>
 
           <a
             aria-label="View dashboard demo"
             href="https://dashboard-psi-topaz.vercel.app/"
-            className=" mt-6 sm:mt-8   lg:mt-12 
-    ml-5 sm:ml-11 self-center
-    inline-flex w-fit items-center
-    rounded-[1px] px-5 py-2 text-sm sm:text-lg md:px-6 md:py-3
-    font-normal tracking-[0.03em]
-    text-[#F5672D]
-    ring-1 ring-[rgba(245,103,45,0.6)]
-    bg-transparent
-    transition-colors duration-200
-
-    hover:text-[#ECA85A]
-    hover:bg-[rgba(245,103,45,0.08)]
-    hover:ring-[rgba(245,103,45,0.9)]
-
-    focus-visible:outline-none
-    focus-visible:text-[#ECA85A]
-    focus-visible:bg-[rgba(245,103,45,0.08)]
-    focus-visible:ring-2 focus-visible:ring-[#F5672D]
-    focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] border p-2
-  "
+            className="mt-6 ml-5 inline-flex w-fit self-center rounded-[1px] border bg-transparent px-5 py-2 p-2 text-sm font-normal tracking-[0.03em] text-[#F5672D] ring-1 ring-[rgba(245,103,45,0.6)] transition-colors duration-200 hover:bg-[rgba(245,103,45,0.08)] hover:text-[#ECA85A] hover:ring-[rgba(245,103,45,0.9)] focus-visible:outline-none focus-visible:bg-[rgba(245,103,45,0.08)] focus-visible:text-[#ECA85A] focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] sm:mt-8 sm:ml-11 sm:text-lg md:px-6 md:py-3 lg:mt-12"
           >
             <span className="relative z-10">Try it out</span>
             <Image
@@ -136,7 +72,7 @@ const Featured = () => {
               alt=""
               height={9}
               width={9}
-              className="ml-2 w-[9px] sm:w-3  h-auto"
+              className="ml-2 h-auto w-[9px] sm:w-3"
               loading="eager"
             />
           </a>
