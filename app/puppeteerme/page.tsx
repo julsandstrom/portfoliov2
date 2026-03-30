@@ -39,7 +39,7 @@ const Page = () => {
         </div>
         <div className="flex flex-col items-center gap-10 justify-center px-6">
           <a
-            href="https://puppeteerme.com/"
+            href="https://puppeteerme.netlify.app/"
             className="flex underline text-[#F5672D] "
           >
             Try Puppeteer Me

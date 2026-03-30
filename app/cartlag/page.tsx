@@ -38,7 +38,7 @@ const Page = () => {
         <div className="flex gap-12 justify-center">
           {" "}
           <a
-            href="https://cartlag.com/"
+            href="https://cartlag.netlify.app/"
             className="flex underline text-[#F5672D] "
           >
             Try Cartlag{" "}
