@@ -43,17 +43,20 @@ const Hero = () => {
     "
         />
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile.png"
           alt="asasfasf"
           width={900}
           height={200}
           priority
-          className="relative w-36 md:w-64 rounded-xl"
+          className="relative w-36 md:w-64 rounded-xs"
         />{" "}
         <div className="flex flex-col justify-start  md:justify-center gap-2 md:ml-5">
           {" "}
-          <h1 className="font-bold md:text-2xl"> Frontend Developer</h1>
-          <p className="font-thin md:text-lg">Julian Sandström</p>
+          <div>
+            {" "}
+            <h1 className="font-bold md:text-2xl"> Frontend Developer</h1>
+            <p className="font-thin md:text-lg">Julian Sandström</p>
+          </div>
           <a
             aria-label="View dashboard demo"
             href="#work"
