@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Cartlag",
-    image: "/images/cartlag-poster.png",
+    image: "/images/cartlag-page.png",
     overlayTitle: "A body measurement app",
     overlayBody:
       "Generate a personal size card you can download, update, and reuse across brands for accurate fit.",
@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     title: "Puppeteer Me",
-    image: "/images/puppeteerme-poster.png",
+    image: "/images/puppeteerme-page.png",
     overlayTitle: "A quiz about someone you know",
     overlayBody:
       "A quiz about someone you know in a minimalist yet carnival-inspired quiz on perception and identity.",
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     title: "Perfect Parry",
-    image: "/images/perfec-parry-poster.jpg",
+    image: "/images/perfect-parry-desktop.png",
     overlayTitle: "A timing-based combat game",
     overlayBody:
       " A turn-based combat game built in Next.js, without any game libraries.",
@@ -34,7 +34,7 @@ export const projects = [
 
   {
     title: "Auralize",
-    image: "/images/auralize-poster.png",
+    image: "/images/auralize.png",
     overlayTitle: "Web accessibility tool",
     overlayBody:
       "Paste HTML/JSX and preview screen reader output + accessible name computation + warnings.",
