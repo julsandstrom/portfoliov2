@@ -22,7 +22,7 @@ export default function Projects() {
           return (
             <li key={p.title} className="shrink-0 snap-start  pb-6 rounded-xs ">
               <article
-                className="      pb-4 relative w-[300px] sm:w-[400px] md:w-[600px]
+                className=" h-96 md:h-full    pb-4 relative w-[300px] sm:w-[400px] md:w-[600px]
     rounded-[1px] border border-gray-600
     transition-colors duration-200
 

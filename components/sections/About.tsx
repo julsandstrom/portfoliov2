@@ -81,10 +81,12 @@ const About = () => {
           </div>
         </div>
       </figure>
-      <p className="mt-16 sm:mt-24 md:mt-32 font-grotesk font-light mx-auto block  tracking-[0.03em] text-base sm:text-xl   text-[#1C1C1C] max-w-[350px] sm:max-w-[450px] md:max-w-xl lg:max-w-2xl ">
-        {" "}
-        A background in film production and flight coordination, combining
-        structure with emotion to craft scalable experiences.
+      <p className="mt-16 sm:mt-24 md:mt-32 font-grotesk font-light mx-auto block tracking-[0.03em] text-base sm:text-xl text-[#1C1C1C] max-w-[350px] sm:max-w-[450px] md:max-w-xl lg:max-w-2xl">
+        Background in film production and flight coordination. I got into
+        frontend because I wanted to build experiences with the same attention
+        to timing, rhythm, and feel that good filmmaking requires...
+        <br />
+        And it turns out those instincts transfer.
       </p>
       <a
         href="mailto:juliansandstrom@gmail.com"
