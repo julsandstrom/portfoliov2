@@ -6,11 +6,10 @@ const Page = () => {
       <div className="max-w-4xl flex flex-col gap-11">
         <div className="px-6">
           <h1 className="font-bold text-4xl text-left md:text-center">
-            Return Cascade
+            Mekoja
           </h1>
           <p className="font-light py-2 md:text-center">
-            A first-person Unity prototype built in 30 days while learning C#
-            from scratch.
+            A digital reflection platform built around values and balance.
           </p>
         </div>
 
@@ -20,20 +19,20 @@ const Page = () => {
             className="absolute inset-5 bg-linear-to-r from-[#F5672D]/30 via-purple-500/60 to-transparent blur-3xl opacity-70 pointer-events-none"
           />
           <Image
-            src="/images/returncascade-page.png"
+            src="/images/mekoja-page.png"
             height={600}
             width={600}
-            alt="First-person Unity game set in a snowy environment, showing a push-based weapon aimed at distant enemies"
+            alt="Mekoja interface showing a balance scale where users place their chosen values between two opposing life perspectives."
             className="relative w-full md:max-w-[600px] md:rounded-xl"
           />
         </div>
 
-        <div className="flex md:flex-row md:gap-20 items-center gap-10 justify-center px-6">
+        <div className="flex items-center gap-12 justify-center px-6">
           <a
-            href="https://julsandstrom.itch.io/return-cascade"
+            href="https://julsandstrom.github.io/mekoja/"
             className="flex underline text-[#F5672D]"
           >
-            Download & Play
+            Demo
             <Image
               height={600}
               width={600}
@@ -43,11 +42,12 @@ const Page = () => {
               className="w-3 sm:w-5 ml-2"
             />
           </a>
+
           <a
-            href="https://www.youtube.com/watch?v=Vfq_1EhHR1I"
+            href="https://github.com/julsandstrom/mekoja"
             className="underline text-[#F5672D] flex"
           >
-            Watch demo
+            Github
             <Image
               height={600}
               width={600}
@@ -63,29 +63,30 @@ const Page = () => {
           <div className="flex flex-col gap-2">
             <h2 className="font-bold text-xl">The idea</h2>
             <p>
-              I wanted to explore how far a single mechanic could carry an
-              experience. Inspired by the tension and rhythm of juggling, Return
-              Cascade is built around one weapon that only pushes, no bullets,
-              no melee. Everything, from combat to puzzles, flows from that
-              constraint.
+              Mekoja is a space to pause and reflect. You pick three values from
+              ten, then place them across a series of balance scales: what keeps
+              you grounded versus what pushes you forward, what you influence
+              versus what you need to accept. The guidance feature — matching
+              messages between users who share the same values, is designed but
+              awaits a backend layer.
             </p>
           </div>
 
           <div className="flex flex-col gap-2">
             <h2 className="font-bold text-xl">What I learned</h2>
             <p>
-              Shipped a playable prototype in 30 days starting from zero
-              knowledge of Unity and C#. The real challenge was building
-              feedback loops, charge, impact, risk/reward timing, that made the
-              single mechanic feel satisfying rather than limiting.
+              Building an experience where the UI has to carry emotional weight,
+              not just functional clarity. The balance mechanic needed to feel
+              deliberate and calm — Framer Motion was central to making
+              interactions feel considered rather than instant.
             </p>
           </div>
         </section>
 
         <ul className="flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80 justify-center px-6 py-10">
-          <li>Unity</li>
-          <li>C#</li>
-          <li>Physics-based interaction</li>
+          <li>React</li>
+          <li>CSS</li>
+          <li>Framer Motion</li>
         </ul>
       </div>
     </main>

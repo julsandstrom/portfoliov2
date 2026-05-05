@@ -31,7 +31,14 @@ export const projects = [
       "A chat app showing only the latest message, with AI stepping in when words run out.",
     url: "/driftus",
   },
-
+  {
+    title: "Mekoja",
+    image: "/images/mekoja-page.png",
+    overlayTitle: "A digital reflection platform",
+    overlayBody:
+      "Choose three values, place them in balance, and reflect on what grounds you versus what drives you forward.",
+    url: "/mekoja",
+  },
   {
     title: "Auralize",
     image: "/images/auralize.png",
