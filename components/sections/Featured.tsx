@@ -8,28 +8,28 @@ const Featured = () => {
       id="featured"
       className="py-7 tracking-[0.03em] text-[#0B0B0B] lg:py-20"
     >
-      <div className="mx-auto flex flex-col md:flex-row">
+      <div className="mx-auto flex flex-col lg:flex-row">
         <Image
           src="/images/perfect-parry-desktop.png"
           alt=""
           aria-hidden="true"
           width={1600}
           height={900}
-          className="h-auto w-full md:w-1/2"
+          className="h-auto w-full lg:w-1/2"
         />
 
-        <div className="mt-5 flex h-auto w-full flex-col items-start justify-start md:mt-0 md:w-1/2 md:pr-11 lg:justify-center">
-          <div className="flex flex-col justify-center self-center gap-2 md:gap-1">
+        <div className="mt-5 flex h-auto w-full flex-col items-start justify-start lg:mt-0 lg:w-1/2 lg:pr-11 lg:justify-center">
+          <div className="flex flex-col justify-center self-center gap-2 md:gap-1 sm:pl-11">
             <h2 className="self-center text-2xl font-extrabold leading-none text-[#F4F3F1] sm:text-5xl md:block md:text-4xl lg:text-5xl xl:text-6xl">
               Phase-based state machine
             </h2>
           </div>
 
-          <ul className="mt-6 self-center space-y-2 pl-5 text-sm font-extralight sm:mt-11 sm:space-y-4 sm:pl-11 sm:text-xl md:self-center md:space-y-6 md:pl-3 md:text-xl lg:mt-16 lg:ml-0 lg:space-y-8 lg:pl-0">
+          <ul className="mt-6 self-center space-y-2 pl-5 text-sm font-extralight sm:mt-11 sm:space-y-4 sm:pl-11 sm:text-xl md:self-center md:space-y-6 md:pl-3 md:text-xl lg:mt-16 lg:ml-10 lg:space-y-8 lg:pl-0">
             <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
-                className="self-center pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
+                className="self-start pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
               >
                 +
               </span>
@@ -49,7 +49,7 @@ const Featured = () => {
             <li className="flex h-fit items-center text-[#F4F3F1]">
               <span
                 aria-hidden="true"
-                className="self-center pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
+                className="self-start pr-1 text-xs text-[#F5672D] md:text-xl lg:pr-2"
               >
                 +
               </span>

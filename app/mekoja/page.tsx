@@ -66,7 +66,7 @@ const Page = () => {
               Mekoja is a space to pause and reflect. You pick three values from
               ten, then place them across a series of balance scales: what keeps
               you grounded versus what pushes you forward, what you influence
-              versus what you need to accept. The guidance feature — matching
+              versus what you need to accept. The guidance feature, matching
               messages between users who share the same values, is designed but
               awaits a backend layer.
             </p>
@@ -77,7 +77,7 @@ const Page = () => {
             <p>
               Building an experience where the UI has to carry emotional weight,
               not just functional clarity. The balance mechanic needed to feel
-              deliberate and calm — Framer Motion was central to making
+              deliberate and calm, Framer Motion was central to making
               interactions feel considered rather than instant.
             </p>
           </div>
