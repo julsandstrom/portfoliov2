@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
-
-import { IBM_Plex_Sans } from "next/font/google";
+import { IBM_Plex_Sans, Gilda_Display } from "next/font/google";
 import localFont from "next/font/local";
-import { Space_Grotesk } from "next/font/google";
-import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 const ibm = IBM_Plex_Sans({
@@ -25,11 +21,11 @@ const clashDisplay = localFont({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const gildaDisplay = Gilda_Display({
   subsets: ["latin"],
-  variable: "--font-spaceGrotesk",
+  variable: "--font-gilda",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: "400",
 });
 
 export const metadata = {
@@ -61,16 +57,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ibm.variable} ${clashDisplay.variable} ${spaceGrotesk.variable}`}
+      className={`${ibm.variable} ${clashDisplay.variable} ${gildaDisplay.variable}`}
     >
-      <body>
-        <div
-          id="home"
-          className="min-h-screen bg-[#0B0B0B] text-[#F4F3F1] pb-5  "
-        >
-          <Header />
-          {children} <Footer />
-        </div>
+      <body className="overflow-y-scroll scroll-smooth motion-reduce:scroll-auto bg-[#0B0B0B] text-[#F4F3F1]">
+        {children} <Footer />
       </body>
     </html>
   );

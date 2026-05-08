@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @theme {
   --font-sans: var(--font-plex), system-ui, sans-serif;
-  --font-grotesk: var(--font-spaceGrotesk), system-ui, sans-serif;
+  --font-gilda: var(--font-gilda), system-ui, sans-serif;
   --font-display: var(--font-clash), system-ui, sans-serif;
 }
 :root {
@@ -21,18 +21,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
-
-* {
-  scrollbar-width: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
 
 html {
   scroll-behavior: smooth;
@@ -46,20 +34,33 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
 .scrollbar-visible::-webkit-scrollbar {
-  height: 10px;
+  height: 12px !important;
+  display: block !important;
 }
 
 .scrollbar-visible::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.08);
+  background: #c8c8c8 !important;
 }
 
 .scrollbar-visible::-webkit-scrollbar-thumb {
-  background: rgba(245, 103, 45, 0.8);
-  border-radius: 6px;
+  background: #1b1b1b !important;
+  border-radius: 5px;
+}
+
+.scrollbar-visible::-webkit-scrollbar-thumb:hover {
+  background: #000 !important;
 }
 
 .scrollbar-visible {
-  scrollbar-color: rgba(255, 255, 255, 0.8) rgba(255, 255, 255, 0.08);
-  scrollbar-width: auto;
+  scrollbar-width: auto !important;
+  scrollbar-color: #1b1b1b #c8c8c8 !important;
 }

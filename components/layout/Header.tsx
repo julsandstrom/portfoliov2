@@ -18,7 +18,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-[#0B0B0B]/80 z-50 ">
+    <header className="sticky top-0 bg-[#F0F0F0] text-black z-50 ">
       <div className="mx-auto flex  items-center justify-end md:justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
         <button
           aria-label="Open navigation"

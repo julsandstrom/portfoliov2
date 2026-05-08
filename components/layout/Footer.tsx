@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-[#0B0B0B] py-6 md:py-11 lg:py-16  tracking-[0.03em] sm:px-11 lg:px-14">
       <div className="mx-auto flex  items-center justify-between px-5 ">
         <dl className="flex flex-col">
-          <dt className="text-base sm:text-lg md:text-xl  font-medium text-[#F5672D] self-center">
+          <dt className="text-base sm:text-lg md:text-xl  font-medium text-[#F4F3F1] self-center">
             Based in
           </dt>
           <dd className="text-base sm:text-lg md:text-xl  text-[#F4F3F1] font-extralight">
@@ -24,14 +24,14 @@ const Footer = () => {
     text-[#F4F3F1] text-xs
     cursor-pointer
 
-    hover:text-[#ECA85A]
-    focus-visible:text-[#ECA85A]
+   
+    focus-visible:text-[#000000]
 
-    hover:bg-white/5
+   
     focus-visible:bg-white/5
 
     focus-visible:outline-none
-    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-2 focus-visible:ring-[#000000]
     focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
               <Image
@@ -51,14 +51,14 @@ const Footer = () => {
     text-[#F4F3F1] text-xs
     cursor-pointer
 
-    hover:text-[#ECA85A]
-    focus-visible:text-[#ECA85A]
+   
+    focus-visible:text-[#000000]
 
-    hover:bg-white/5
+   
     focus-visible:bg-white/5
 
     focus-visible:outline-none
-    focus-visible:ring-2 focus-visible:ring-[#F5672D]
+    focus-visible:ring-2 focus-visible:ring-[#000000]
     focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
             >
               <Image

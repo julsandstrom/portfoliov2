@@ -1,18 +1,12 @@
 "use client";
-
-import {
-  motion,
-  useAnimation,
-  useInView,
-  useReducedMotion,
-} from "framer-motion";
+import { useAnimation, useInView, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+
 const Hero = () => {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref, { amount: 0.6, once: true });
-
   const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
@@ -24,72 +18,119 @@ const Hero = () => {
     <section
       id="main"
       aria-labelledby="heroTitle"
-      className="mx-auto max-w-5xl sm:max-6xl md:max-w-6xl px-5 min-h-[40vh] md:min-h-[70vh]  flex flex-col items-center justify-center gap-3"
+      className="sticky top-0 h-screen flex items-center justify-center bg-[#F0F0F0] text-black"
     >
-      <div className="relative flex gap-5 w-full justify-center">
-        {" "}
-        <div
-          aria-hidden="true"
-          className="
-      absolute
-      inset-10 md:inset-20
-      bg-linear-to-r
-      from-[#F5672D]/20
-      via-purple-500/20
-      to-transparent
-      blur-3xl
-      opacity-70
-      pointer-events-none
-    "
-        />
-        <Image
-          src="/images/profile.png"
-          alt="asasfasf"
-          width={900}
-          height={200}
-          priority
-          className="relative w-36 md:w-64 rounded-xs"
-        />{" "}
-        <div className="flex flex-col justify-start  md:justify-center gap-2 md:ml-5">
-          {" "}
-          <div>
-            {" "}
-            <h1 className="font-bold md:text-2xl"> Frontend Developer</h1>
-            <p className="font-thin md:text-lg">Julian Sandström</p>
+      <div
+        aria-hidden="true"
+        className="absolute inset-10 md:inset-20 blur-3xl opacity-70 pointer-events-none"
+      />
+
+      <div
+        className="relative grid grid-cols-1 md:grid-cols-2 w-full h-full grid-rows-2  md:grid-rows-1   [grid-template-areas:'text''image']
+  md:[grid-template-areas:'image_text']"
+      >
+        <div className="relative h-full [grid-area:image]">
+          <Image
+            src="/images/profile.png"
+            alt="Profile photo of Julian Sandström"
+            fill
+            priority
+            className=" object-cover"
+          />
+        </div>
+
+        <div className="[grid-area:text] relative flex flex-col items-start justify-center  gap-4 px-8 md:px-14 ">
+          <div className="font-gilda w-full flex flex-col items-center justify-center gap-5 md:gap-9">
+            <h1
+              id="heroTitle"
+              className="text-5xl md:text-3xl lg:text-8xl text-center"
+            >
+              I'm Julian
+            </h1>
+            <p className="font-gilda font-thin text-lg md:text-xl lg:text-4xl mt-1 text-center">
+              Frontend Developer graduating in 2026
+            </p>{" "}
+            <a
+              href="#about"
+              aria-label="Learn more about Julian"
+              className=" font-display
+    w-fit mx-auto block 
+    rounded-[1px] bg-[#0D0D0D]
+    px-5 sm:px-7 py-2 md:py-3 md:px-6
+    text-sm sm:text-lg lg:text-2xl tracking-[0.03em]
+    text-[#EAE6E1]
+
+    hover:bg-[#1f1f1f]
+   
+
+
+  "
+            >
+              About me
+            </a>{" "}
           </div>
-          <a
-            aria-label="View dashboard demo"
-            href="#work"
-            className="mt-3 md:mt-6
-              inline-flex w-fit items-center
-              rounded-[1px] px-5 py-2 text-sm sm:text-lg md:px-6 md:py-3
-              font-normal tracking-[0.03em]
-              text-[#F5672D]
-              ring-1 ring-[rgba(245,103,45,0.6)]
-              bg-transparent
-              transition-colors duration-200
-          
-              hover:text-[#ECA85A]
-              hover:bg-[rgba(245,103,45,0.08)]
-              hover:ring-[rgba(245,103,45,0.9)]
-          
-              focus-visible:outline-none
-              focus-visible:text-[#ECA85A]
-              focus-visible:bg-[rgba(245,103,45,0.08)]
-              focus-visible:ring-2 focus-visible:ring-[#F5672D]
-              focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B] border p-2
-            "
-          >
-            <span className="relative z-10">See Projects</span>
-            <Image
-              src="/icons/yellow-arrow-right.svg"
-              alt=""
-              height={9}
-              width={9}
-              className="ml-2 w-[9px] sm:w-3  h-auto"
-              loading="eager"
-            />
-          </a>
+          <figure className="absolute bottom-10 left-0 right-0 px-8 md:px-14">
+            {" "}
+            <figcaption className="sr-only">
+              Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
+            </figcaption>
+            <div
+              aria-hidden="true"
+              className="flex items-end justify-center 2xl:justify-around place-items-end gap-8"
+            >
+              <Image
+                src="/icons/Nextjs-logo.svg"
+                alt=""
+                aria-hidden="true"
+                height={30}
+                width={30}
+                className=" w-10 sm:w-16 md:w-20 h-fit"
+              />
+
+              <Image
+                src="/icons/Tailwind_CSS_logo_with_dark_text.svg"
+                alt=""
+                aria-hidden="true"
+                height={30}
+                width={30}
+                className="ml-2 h-fit w-20 sm:w-28 md:w-36"
+              />
+
+              <div className="flex items-end justify-center">
+                <Image
+                  src="/icons/React-icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                  height={30}
+                  width={30}
+                  className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+                />{" "}
+                <span
+                  aria-hidden="true"
+                  className="text-xs sm:text-sm md:text-xl font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80  leading-none"
+                >
+                  React
+                </span>
+              </div>
+              <div className="flex items-end justify-center">
+                {" "}
+                <Image
+                  src="/icons/Typescript_logo_2020.svg"
+                  alt=""
+                  aria-hidden="true"
+                  height={30}
+                  width={30}
+                  className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+                />
+                <span
+                  aria-hidden="true"
+                  className="text-xs sm:text-sm md:text-xl  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none"
+                >
+                  TypeScript
+                </span>
+              </div>
+            </div>
+          </figure>
         </div>
       </div>
     </section>
