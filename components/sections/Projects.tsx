@@ -1,8 +1,17 @@
 "use client";
+import { useState } from "react";
 import { projects } from "../../lib/data/project";
 import Image from "next/image";
 
+const ALL_TAGS = ["Next.js", "React", "Tailwind", "C#", "TypeScript"];
+
 export default function Projects() {
+  const [active, setActive] = useState<string | null>(null);
+
+  const visible = active
+    ? projects.filter((p) => p.tags.includes(active))
+    : projects;
+
   return (
     <section
       id="work"
@@ -12,27 +21,63 @@ export default function Projects() {
         Projects
       </h2>
 
+      <div
+        role="group"
+        aria-label="Filter projects by technology"
+        className="mt-6 sm:mt-10 flex flex-wrap gap-2 sm:gap-3 lg:gap-6 lg:pr-14 mx-auto justify-center"
+      >
+        <button
+          onClick={() => setActive(null)}
+          aria-pressed={active === null}
+          className={`
+            px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-[1px]
+            border transition-colors duration-150
+            ${
+              active === null
+                ? "border-[#F5672D] text-[#F5672D] bg-white/5"
+                : "border-gray-600 text-gray-400 hover:border-gray-400 hover:text-gray-200"
+            }
+          `}
+        >
+          All
+        </button>
+
+        {ALL_TAGS.map((tag) => (
+          <button
+            key={tag}
+            onClick={() => setActive(active === tag ? null : tag)}
+            aria-pressed={active === tag}
+            className={`
+              px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-[1px]
+              border transition-colors duration-150
+              ${
+                active === tag
+                  ? "border-[#F5672D] text-[#F5672D] bg-white/5"
+                  : "border-gray-600 text-gray-400 hover:border-gray-400 hover:text-gray-200"
+              }
+            `}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+
       <ul
         aria-label="my projects"
         tabIndex={-1}
         className="
           mt-6 sm:mt-14 md:mt-20
-
-       
           flex gap-4 sm:gap-10 pb-6
           scroll-smooth motion-reduce:scroll-auto
           snap-x snap-mandatory
           overflow-x-auto scrollbar-visible
-
-       
           lg:grid lg:grid-cols-2 lg:gap-10
           lg:overflow-x-visible lg:snap-none lg:pb-0
           lg:pr-14
-
           xl:grid-cols-3
         "
       >
-        {projects.map((p) => (
+        {visible.map((p) => (
           <li
             key={p.title}
             className="shrink-0 snap-start pb-6 rounded-xs lg:shrink lg:snap-none lg:pb-0"
@@ -42,7 +87,6 @@ export default function Projects() {
                 md:h-full pb-4 relative
                 w-[300px] sm:w-[400px] md:w-[600px]
                 lg:w-full
-
                 rounded-[1px] border border-gray-600
                 transition-colors duration-200
                 hover:border-[#F5672D] hover:bg-white/5
@@ -60,12 +104,12 @@ export default function Projects() {
                   alt=""
                   aria-hidden="true"
                   className="
-    h-[220px] w-[300px]
-    sm:h-[350px] sm:w-[400px]
-    md:h-[441px] md:w-[600px]
-    lg:h-auto lg:w-full lg:aspect-video
-    object-cover
-  "
+                    h-[220px] w-[300px]
+                    sm:h-[350px] sm:w-[400px]
+                    md:h-[441px] md:w-[600px]
+                    lg:h-auto lg:w-full lg:aspect-video
+                    object-cover
+                  "
                 />
                 <div className="flex items-center px-4 py-3">
                   <h3 className="text-2xl sm:text-3xl font-light text-[#F5672D] flex">
