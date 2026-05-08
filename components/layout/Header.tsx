@@ -18,14 +18,14 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-[#F0F0F0] text-black z-50 ">
-      <div className="mx-auto flex  items-center justify-end md:justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
+    <header className="fixed top-0 bg-none text-black z-50 right-50  mx-auto">
+      <div className="mx-auto flex  items-center  justify-end md:justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
         <button
           aria-label="Open navigation"
           aria-expanded={open}
           onClick={toggleMenu}
           className="group flex h-9 flex-col items-center justify-center gap-1.5 sm:gap-2 rounded-[0.5px] cursor-pointer md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
-                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  hover:text-[#ECA85A]
+                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  
     focus-visible:text-[#ECA85A] "
         >
           <span
@@ -45,28 +45,28 @@ export default function Header() {
           />
         </button>
 
-        <nav className="hidden md:flex  gap-16 font-light tracking-[0.04em] text-base md:text-xl">
+        <nav className="hidden md:flex  gap-16 font-regular tracking-[0.04em] text-base md:text-xl">
           <Link
             href="/"
-            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
+            className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             Home
           </Link>
           <Link
             href="/#work"
-            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
+            className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             Work
           </Link>
           <Link
             href="/#about"
-            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
+            className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             About
           </Link>
           <a
             href="mailto:juliansandstrom@gmail.com"
-            className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
+            className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             Contact
           </a>
@@ -113,7 +113,7 @@ export default function Header() {
               <Link
                 href="/#work"
                 onClick={toggleMenu}
-                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+                className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
                 {" "}
                 Work{" "}
@@ -132,7 +132,7 @@ export default function Header() {
               <Link
                 href="/#about"
                 onClick={toggleMenu}
-                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+                className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
                 {" "}
                 About{" "}
@@ -152,7 +152,7 @@ export default function Header() {
                 href="mailto:juliansandstrom@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#F5672D] transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+                className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
                 {" "}
                 Contact{" "}

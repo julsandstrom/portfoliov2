@@ -2,6 +2,7 @@ import "./globals.css";
 import { IBM_Plex_Sans, Gilda_Display } from "next/font/google";
 import localFont from "next/font/local";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 const ibm = IBM_Plex_Sans({
   subsets: ["latin"],
@@ -59,7 +60,8 @@ export default function RootLayout({
       lang="en"
       className={`${ibm.variable} ${clashDisplay.variable} ${gildaDisplay.variable}`}
     >
-      <body className="overflow-y-scroll scroll-smooth motion-reduce:scroll-auto bg-[#0B0B0B] text-[#F4F3F1]">
+      <body className="overflow-y-scroll  scroll-smooth motion-reduce:scroll-auto bg-[#0B0B0B] text-[#F4F3F1]">
+        <Header />
         {children} <Footer />
       </body>
     </html>

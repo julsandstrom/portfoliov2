@@ -35,10 +35,10 @@ const Featured = () => {
             aria-label="Featured project"
             className="
               absolute top-0 left-0
-              bg-[#0B0B0B] text-[#0B0B0B]
+              bg-[#0B0B0B] text-[#f8f8f8]
               text-[10px] sm:text-xs xl:text-xl 2xl:text-2xl
-              font-bold tracking-[0.15em] uppercase
-              px-2.5 py-1 select-none
+              font-semibold font-gilda  tracking-[0.15em] uppercase
+              px-2.5 lg:px-4 lg:py-2 py-1 select-none
             "
           >
             Added May 2026
