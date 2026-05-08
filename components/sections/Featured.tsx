@@ -9,14 +9,30 @@ const Featured = () => {
       className="py-7 tracking-[0.03em] text-[#0B0B0B] lg:py-20"
     >
       <div className="mx-auto flex flex-col lg:flex-row">
-        <Image
-          src="/images/perfect-parry-desktop.png"
-          alt=""
-          aria-hidden="true"
-          width={1600}
-          height={900}
-          className="h-auto w-full lg:w-1/2"
-        />
+        <div className="relative lg:w-1/2">
+          <Image
+            src="/images/perfect-parry-desktop.png"
+            alt=""
+            aria-hidden="true"
+            width={1600}
+            height={900}
+            className="h-auto w-full"
+          />
+
+          <span
+            aria-label="Featured project"
+            className="
+              absolute top-0 left-0
+              bg-[#F5672D] text-[#0B0B0B]
+              text-[10px] sm:text-xs xl:text-xl 2xl:text-2xl
+              font-bold tracking-[0.15em] uppercase rounded-r-xs
+              px-2.5 py-1
+              select-none
+            "
+          >
+            Added May 2026
+          </span>
+        </div>
 
         <div className="mt-5 flex h-auto w-full flex-col items-start justify-start lg:mt-0 lg:w-1/2 lg:pr-11 lg:justify-center">
           <div className="flex flex-col justify-center self-center gap-2 md:gap-1 sm:pl-11">
