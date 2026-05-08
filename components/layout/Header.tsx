@@ -18,34 +18,32 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 bg-none text-black z-50 right-50  mx-auto">
-      <div className="mx-auto flex  items-center  justify-end md:justify-center px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4 ">
+    <header className="fixed w-full top-0 bg-none text-black z-50 md:right-0 xl:right-50  mx-auto">
+      <div className="mx-auto flex items-center justify-end px-5 sm:px-11 lg:px-14 py-2 sm:py-3 md:py-4">
         <button
           aria-label="Open navigation"
           aria-expanded={open}
           onClick={toggleMenu}
-          className="group flex h-9 flex-col items-center justify-center gap-1.5 sm:gap-2 rounded-[0.5px] cursor-pointer md:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D]
-                 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0b0b0b]  
-    focus-visible:text-[#ECA85A] "
+          className="group flex h-9  flex-col bg-black/60 backdrop-blur-sm px-4 rounded-xs  items-center justify-center gap-1.5 sm:gap-2 cursor-pointer lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
         >
           <span
             className={`h-0.5 sm:h-1 self-start transition-all duration-300 ${
-              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#F4F3F1]"
+              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#ffffff]"
             }`}
           />
           <span
             className={`h-0.5 w-5 sm:w-9 sm:h-1 transition-all duration-300 ${
-              open ? "bg-[#ECA85A]" : "bg-[#F4F3F1]"
+              open ? "bg-[#ECA85A]" : "bg-[#ffffff]"
             }`}
           />
           <span
             className={`h-0.5 sm:h-1 self-end transition-all duration-300 ${
-              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#F4F3F1]"
+              open ? "w-5 sm:w-9 bg-[#F5672D]" : "w-4 sm:w-7 bg-[#ffffff]"
             }`}
           />
         </button>
 
-        <nav className="hidden md:flex  gap-16 font-regular tracking-[0.04em] text-base md:text-xl">
+        <nav className="hidden lg:flex  gap-16 font-regular tracking-[0.04em] text-base md:text-xl">
           <Link
             href="/"
             className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
@@ -75,7 +73,7 @@ export default function Header() {
 
       <div
         className={`
-          fixed inset-0 z-50 md:hidden
+          fixed inset-0 z-50 lg:hidden
           ${
             showMenu
               ? "opacity-100 pointer-events-auto"
@@ -87,7 +85,7 @@ export default function Header() {
         <button
           aria-hidden
           onClick={toggleMenu}
-          className="absolute inset-0 bg-black/50"
+          className="absolute  inset-0 bg-black/50"
         />
 
         <div className="relative flex h-full w-full flex-col items-center justify-start bg-[#0B0B0B] px-6 sm:px-11 py-20 tracking-[0.04em]">
