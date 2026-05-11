@@ -34,11 +34,11 @@ const Featured = () => {
           <span
             aria-label="Featured project"
             className="
-              absolute -bottom-12 md:-bottom-20 right-10 lg:-right-16 lg:bottom-20 rounded-full
-              bg-[#f8b577] text-[#1c1c1c]
+              absolute -bottom-12 md:-bottom-20 right-10 font-gilda lg:-right-16 lg:bottom-20 rounded-full
+              bg-[#a50f0f] text-[#ffffff]
                text-base xl:text-xl 2xl:text-2xl
               font-bold    uppercase
-              md:py-12 md:px-6 py-9 xl:py-16 px-2 select-none
+              md:py-12 md:px-6 py-10 xl:py-16 px-3 select-none
             "
           >
             May 2026
