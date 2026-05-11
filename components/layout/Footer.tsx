@@ -42,7 +42,6 @@ const Footer = () => {
                 width={20}
                 className=" w-8 sm:w-11  h-20 "
               />{" "}
-              <span className="text-center text-base sm:text-lg">Gmail</span>
             </a>
             <a
               href="https://se.linkedin.com/in/juliansandstrom"
@@ -69,9 +68,6 @@ const Footer = () => {
                 width={20}
                 className=" w-8 sm:w-10   h-20"
               />
-              <span className="text-center text-base sm:text-lg">
-                Linked In
-              </span>
             </a>
           </div>
         </nav>
