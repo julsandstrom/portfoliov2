@@ -34,18 +34,18 @@ const Featured = () => {
           <span
             aria-label="Featured project"
             className="
-              absolute top-0 left-0
-              bg-[#0B0B0B] text-[#f8f8f8]
-              text-[10px] sm:text-xs xl:text-xl 2xl:text-2xl
-              font-semibold font-gilda  tracking-[0.15em] uppercase
-              px-2.5 lg:px-4 lg:py-2 py-1 select-none
+              absolute -bottom-12 md:-bottom-20 right-10 lg:-right-16 lg:bottom-20 rounded-full
+              bg-[#f8b577] text-[#1c1c1c]
+               text-base xl:text-xl 2xl:text-2xl
+              font-bold    uppercase
+              md:py-12 md:px-6 py-9 xl:py-16 px-2 select-none
             "
           >
-            Added May 2026
+            May 2026
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-start gap-10 lg:gap-10 px-8 sm:px-14 py-14 lg:py-0">
+        <div className="flex flex-col items-center justify-start lg:justify-center gap-10 lg:gap-10 px-8 sm:px-14 py-14 lg:py-0">
           <h2 className="text-3xl font-extrabold leading-none  sm:text-4xl lg:text-5xl xl:text-6xl">
             Perfect Parry
           </h2>
