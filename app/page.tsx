@@ -4,6 +4,7 @@ import Featured from "@/components/sections/Featured";
 
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
+import Experience from "@/components/layout/Experience";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
           <Featured />
         </div>
         <Projects />
+        {/* <Experience /> */}
         <About />
       </main>
     </>

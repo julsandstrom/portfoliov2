@@ -24,7 +24,7 @@ export default function Header() {
           aria-label="Open navigation"
           aria-expanded={open}
           onClick={toggleMenu}
-          className="group flex h-9  flex-col bg-black/60 backdrop-blur-sm px-4 rounded-xs  items-center justify-center gap-1.5 sm:gap-2 cursor-pointer lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+          className="group flex h-9 sm:py-2 sm:h-12  flex-col bg-black/60 backdrop-blur-sm px-4 rounded-xs  items-center justify-center gap-1.5 sm:gap-2 cursor-pointer lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
         >
           <span
             className={`h-0.5 sm:h-1 self-start transition-all duration-300 ${
@@ -43,7 +43,7 @@ export default function Header() {
           />
         </button>
 
-        <nav className="hidden lg:flex  gap-16 font-regular tracking-[0.04em] text-base md:text-xl">
+        <nav className="hidden font-gilda lg:flex  gap-16 font-regular tracking-[0.04em] text-base md:text-xl">
           <Link
             href="/"
             className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
@@ -150,7 +150,7 @@ export default function Header() {
                 href="mailto:juliansandstrom@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+                className=" transition-colors   focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
                 {" "}
                 Contact{" "}

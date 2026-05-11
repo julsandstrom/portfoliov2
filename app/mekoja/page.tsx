@@ -13,15 +13,15 @@ const Page = () => {
           />
         </div>
 
-        <div className="relative flex flex-col px-8 sm:px-14 py-14 lg:py-0 min-h-screen">
-          <div className="flex-1 flex flex-col items-center justify-center md:mb-[120px]  lg:pb-[330px]">
-            <h1 className="font-bold text-4xl text-center lg:text-6xl ">
+        <div className="relative flex flex-col items-center justify-start lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 lg:mt-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-lg md:max-w-xl 2xl:max-w-2xl mx-auto">
+          <div className=" lg:px-8 flex flex-col  gap-2 ">
+            <h1 className="font-bold text-4xl text-center lg:text-5xl">
               Mekoja
             </h1>
             <p className="font-light py-2 lg:py-6 text-center lg:text-xl xl:text-2xl">
               A digital reflection platform built around values and balance.
             </p>
-            <div className="flex gap-8 mt-3 lg:text-xl xl:text-2xl justify-center lg:gap-12">
+            <div className="flex gap-8 mt-3 lg:text-xl xl:text-2xl justify-center lg:gap-12 font-light">
               <a
                 href="https://julsandstrom.github.io/mekoja/"
                 className="underline"
@@ -37,10 +37,10 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 px-8 sm:px-14 pb-10">
-            <section className="flex flex-col gap-10">
+          <div className="">
+            <section className="flex flex-col gap-10 md:mb-16">
               <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-xl">The idea</h2>
+                <h2 className="font-bold text-xl font-gilda">The idea</h2>
                 <p className="font-light">
                   Mekoja is a space to pause and reflect. You pick three values
                   from ten, then place them across a series of balance scales:
@@ -51,7 +51,7 @@ const Page = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-xl">What I learned</h2>
+                <h2 className="font-bold text-xl font-gilda">What I learned</h2>
                 <p className="font-light">
                   Building an experience where the UI has to carry emotional
                   weight, not just functional clarity. The balance mechanic
@@ -60,7 +60,7 @@ const Page = () => {
                 </p>
               </div>
             </section>
-            <ul className="flex justify-center flex-wrap gap-x-7 gap-y-3 text-sm mt-6">
+            <ul className="absolute bottom-5 sm:bottom-0 left-0 right-0 flex justify-center flex-wrap gap-x-7 lg:gap-x-12 lg:bottom-10  text-sm lg:text-base  ">
               <li>React</li>
               <li>CSS</li>
               <li>Framer Motion</li>

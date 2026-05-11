@@ -12,17 +12,16 @@ const Page = () => {
             className="object-cover"
           />
         </div>
-
-        <div className="relative flex flex-col px-8 sm:px-14 py-14 lg:py-0 min-h-screen">
-          <div className="flex-1 flex flex-col items-center justify-center md:mb-[120px]  lg:pb-[330px]">
-            <h1 className="font-bold text-4xl text-center lg:text-6xl ">
+        <div className="relative flex flex-col items-center justify-start lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 lg:mt-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-lg md:max-w-xl 2xl:max-w-2xl mx-auto">
+          <div className=" lg:px-8 flex flex-col  gap-2 ">
+            <h1 className="font-bold text-4xl text-center lg:text-5xl">
               DriftUs
             </h1>
             <p className="font-light py-2 lg:py-6 text-center lg:text-xl xl:text-2xl">
               A chat app that shows only the latest message, with AI stepping in
               when words run out.
             </p>
-            <div className="flex gap-8 mt-3 lg:text-xl xl:text-2xl justify-center lg:gap-12">
+            <div className="flex gap-8 mt-3 lg:text-xl xl:text-2xl justify-center lg:gap-12 font-light">
               <a href="https://driftus.netlify.app/login" className="underline">
                 Demo
               </a>
@@ -35,10 +34,10 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 px-8 sm:px-14 pb-10">
-            <section className="flex flex-col gap-10">
+          <div className="">
+            <section className="flex flex-col gap-10 md:mb-16">
               <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-xl">The idea</h2>
+                <h2 className="font-bold text-xl font-gilda">The idea</h2>
                 <p className="font-light">
                   In real conversation, words disappear. In modern chat, they
                   accumulate, with timestamps, history, and the weight of being
@@ -49,7 +48,7 @@ const Page = () => {
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <h2 className="font-bold text-xl">What I learned</h2>
+                <h2 className="font-bold text-xl font-gilda">What I learned</h2>
                 <p className="font-light">
                   Turning probabilistic AI output into deterministic UI state is
                   harder than it sounds, the energy signal needed to feel
@@ -59,7 +58,7 @@ const Page = () => {
                 </p>
               </div>
             </section>
-            <ul className="flex justify-center flex-wrap gap-x-7 gap-y-3 text-sm mt-6">
+            <ul className="absolute bottom-5 sm:bottom-0 left-0 right-0 flex justify-center flex-wrap gap-x-7 lg:gap-x-12 lg:bottom-10  text-sm lg:text-base  ">
               <li>OpenAI API</li>
               <li>Netlify Functions</li>
               <li>REST API</li>

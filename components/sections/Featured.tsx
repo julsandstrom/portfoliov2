@@ -25,7 +25,7 @@ const Featured = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
         <div className="relative min-h-[50vw] lg:min-h-0">
           <Image
-            src="/images/perfect-parry-desktop.png"
+            src="/images/perfect-parry-mobile.png"
             alt=""
             aria-hidden="true"
             fill
@@ -45,16 +45,20 @@ const Featured = () => {
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-6 lg:gap-10 px-8 sm:px-14 py-14 lg:py-0">
-          <h2 className="text-2xl font-extrabold leading-none  sm:text-4xl lg:text-5xl xl:text-6xl">
-            Phase-based state machine
+        <div className="flex flex-col items-center justify-start gap-10 lg:gap-10 px-8 sm:px-14 py-14 lg:py-0">
+          <h2 className="text-3xl font-extrabold leading-none  sm:text-4xl lg:text-5xl xl:text-6xl">
+            Perfect Parry
           </h2>
+          <p className="text-base sm:text-lg lg:text-xl mx-auto text-center">
+            A turn-based combat game built without game libraries, just hooks,
+            context, and requestAnimationFrame.{" "}
+          </p>
 
-          <ul className="space-y-4 text-sm font-extralight sm:text-xl lg:mt-5">
+          <ul className="space-y-4 mt-5 text-sm font-light sm:text-xl lg:mt-5">
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl"
+                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
@@ -63,7 +67,7 @@ const Featured = () => {
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl"
+                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
@@ -72,7 +76,7 @@ const Featured = () => {
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl"
+                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
@@ -80,10 +84,12 @@ const Featured = () => {
             </li>
           </ul>
 
-          <a
-            aria-label="Try featured demo"
-            href="https://perfectparry.vercel.app/"
-            className="w-fit inline-flex items-center rounded-[1px] bg-transparent
+          <div className="flex gap-10 items-center lg:mt-10 lg:gap-16">
+            {" "}
+            <a
+              aria-label="Try featured demo"
+              href="https://perfectparry.vercel.app/"
+              className="w-fit inline-flex items-center rounded-[1px] bg-transparent
     px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg
     font-normal tracking-[0.03em] text-[#0B0B0B]
     border border-[#0B0B0B]/40
@@ -92,9 +98,27 @@ const Featured = () => {
     focus-visible:outline-none
     focus-visible:ring-2 focus-visible:ring-[#0B0B0B]
     focus-visible:ring-offset-2 focus-visible:ring-offset-[#F0F0F0] hover:border-1"
-          >
-            <span className="relative z-10">Try it out</span>
-          </a>
+            >
+              <span className="relative z-10">Try it out</span>
+            </a>
+            <a
+              aria-label="Read more about the project on its dedicated page"
+              href="/perfectparry"
+              className="w-fit inline-flex items-center rounded-[1px]
+    px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg
+    font-normal tracking-[0.03em]  text-[#EAE6E1]
+
+    hover:bg-[#1f1f1f]
+    border border-[#0B0B0B]/40
+    transition-colors duration-200
+    bg-[#0D0D0D] hover:border-[#0B0B0B]/80
+    focus-visible:outline-none
+    focus-visible:ring-2 focus-visible:ring-[#0B0B0B]
+    focus-visible:ring-offset-2 focus-visible:ring-offset-[#F0F0F0] hover:border-1"
+            >
+              <span className="relative z-10">Read more</span>
+            </a>
+          </div>
         </div>
       </div>
     </motion.section>
