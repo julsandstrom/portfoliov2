@@ -45,13 +45,13 @@ const Featured = () => {
           </span>
         </div>
 
-        <div className="flex flex-col items-center justify-start lg:justify-center gap-10 lg:gap-10 px-8 sm:px-14 py-14 lg:py-0">
+        <div className="flex flex-col items-center justify-start lg:justify-center gap-10 lg:gap-10 px-4 md:px-8 sm:px-14 py-14 lg:py-0">
           <h2 className="text-3xl font-extrabold leading-none  sm:text-4xl lg:text-5xl xl:text-6xl">
             Perfect Parry
           </h2>
           <p className="text-base sm:text-lg lg:text-xl mx-auto text-center">
-            A turn-based combat game built without game libraries, just hooks,
-            context, and requestAnimationFrame.{" "}
+            A turn-based game built without game libraries, hooks, context, &
+            requestAnimationFrame.
           </p>
 
           <ul className="space-y-4 mt-5 text-sm font-light sm:text-xl lg:mt-5">

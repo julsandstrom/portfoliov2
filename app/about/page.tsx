@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <figure className="absolute bottom-0 lg:bottom-10 left-0 right-0 px-8 md:px-14">
+            <figure className="absolute bottom-8 lg:bottom-10 left-0 right-0 px-8 md:px-14">
               <figcaption className="sr-only">
                 Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
               </figcaption>
