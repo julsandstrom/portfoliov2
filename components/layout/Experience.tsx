@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Experience = () => {
   return (
-    <div className="  mx-auto min-h-screen text-black bg-[#F0F0F0] w-full px-4 py-10">
-      <div className="sm:pl-8 lg:pl-10 max-w-[1500px] mx-auto py-4">
+    <div className="  mx-auto min-h-screen text-black bg-[#F0F0F0] w-full px-4 ">
+      <div className="sm:pl-8 lg:pl-10 max-w-[1500px] mx-auto ">
         <h4 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold  tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full sm:w-auto">
           Experience
         </h4>
