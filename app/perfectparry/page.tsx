@@ -35,7 +35,7 @@ const Page = () => {
           </div>
 
           <div className="">
-            <section className="flex flex-col gap-10 md:mb-16">
+            <section className="flex flex-col gap-10 mb-16">
               <div className="flex flex-col gap-2">
                 <h2 className="font-bold text-xl font-gilda">The idea</h2>
 

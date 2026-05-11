@@ -13,7 +13,7 @@ const About = () => {
           />
         </div>
         <div className="relative flex flex-col items-center justify-center lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-2xl  mx-auto">
-          <div className="lg:px-8 flex flex-col items-center gap-2">
+          <div className="lg:px-8 flex flex-col items-center gap-2 mb-10">
             <h2 className="font-gilda text-4xl text-center lg:text-5xl">
               About Me
             </h2>

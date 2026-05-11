@@ -97,7 +97,7 @@ export default function Header() {
             ×
           </button>
 
-          <nav className="font-gilda flex flex-col items-start justify-center gap-20  text-5xl">
+          <nav className="font-gilda flex flex-col items-start justify-center gap-16  text-5xl">
             <div className=" flex justify-center w-full max-w-xs px-4 py-3   text-[#F4F3F1]">
               <Link
                 href="/"
