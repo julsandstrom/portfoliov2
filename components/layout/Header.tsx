@@ -57,7 +57,7 @@ export default function Header() {
             Work
           </Link>
           <Link
-            href="/#about"
+            href="/about"
             className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             About
@@ -128,7 +128,7 @@ export default function Header() {
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
               {" "}
               <Link
-                href="/#about"
+                href="/about"
                 onClick={toggleMenu}
                 className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >

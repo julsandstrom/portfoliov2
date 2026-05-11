@@ -22,8 +22,8 @@ export default function Home() {
           <Featured />
         </div>
         <Projects />
-        {/* <Experience /> */}
-        <About />
+        <Experience />
+        {/* <About /> */}
       </main>
     </>
   );

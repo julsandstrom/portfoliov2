@@ -51,7 +51,7 @@ const Hero = () => {
               Frontend Developer graduating in 2026
             </p>{" "}
             <a
-              href="#about"
+              href="/about"
               aria-label="Learn more about Julian"
               className=" font-display
     w-fit mx-auto block 
