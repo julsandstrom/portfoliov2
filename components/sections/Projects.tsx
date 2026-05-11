@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { projects } from "../../lib/data/project";
 import Image from "next/image";
 
-const ALL_TAGS = ["Next.js", "React", "Tailwind", "C#", "TypeScript"];
+const ALL_TAGS = ["Next.js", "React", "C#", "TypeScript"];
 
 export default function Projects() {
   const [active, setActive] = useState<string | null>(null);
@@ -28,9 +28,9 @@ export default function Projects() {
     >
       <div className="max-w-[1500px] mx-auto w-full pl-5 sm:pl-11 lg:pl-14 min-h-screen flex flex-col justify-center">
         <div className="flex flex-wrap items-end gap-x-6 gap-y-4 pr-5 sm:pr-11 lg:pr-14">
-          <h2 className="font-grotesk text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full sm:w-auto">
+          <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full sm:w-auto">
             Projects
-          </h2>
+          </h3>
 
           <div
             role="group"

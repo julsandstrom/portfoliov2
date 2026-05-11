@@ -37,7 +37,7 @@ export const projects: Project[] = [
       "A turn-based combat game built in Next.js, without any game libraries.",
     url: "/perfectparry",
 
-    tags: ["Next.js", "Tailwind", "React", "TypeScript"],
+    tags: ["Next.js", "React", "TypeScript"],
   },
   {
     title: "Driftus",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       "A chat app showing only the latest message, with AI stepping in when words run out.",
     url: "/driftus",
 
-    tags: ["React", "Tailwind", "TypeScript"],
+    tags: ["React", "TypeScript"],
   },
   {
     title: "Mekoja",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       "Paste HTML/JSX and preview screen reader output + accessible name computation + warnings.",
     url: "/auralize",
 
-    tags: ["Next.js", "React", "Tailwind", "TypeScript"],
+    tags: ["Next.js", "React", "TypeScript"],
   },
   {
     title: "Return Cascade",

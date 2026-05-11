@@ -58,7 +58,7 @@ const Featured = () => {
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
@@ -67,7 +67,7 @@ const Featured = () => {
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
@@ -76,7 +76,7 @@ const Featured = () => {
             <li className="flex items-start ">
               <span
                 aria-hidden="true"
-                className="pr-2 text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
               >
                 +
               </span>
