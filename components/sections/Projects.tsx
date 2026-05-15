@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { projects } from "../../lib/data/project";
 import Image from "next/image";
 
-const ALL_TAGS = ["Next.js", "React", "C#", "TypeScript"];
+const ALL_TAGS = ["Next.js", "C#", "TypeScript", "React"];
 
 export default function Projects() {
   const [active, setActive] = useState<string | null>(null);
@@ -24,18 +24,18 @@ export default function Projects() {
   return (
     <section
       id="work"
-      className="bg-[#F0F0F0] text-black py-10 sm:py-20 md:pt-36 min-h-screen"
+      className="bg-[#F0F0F0] text-black py-10 sm:py-20 sm:pt-48 lg:pt-20 "
     >
-      <div className="max-w-[1500px] mx-auto w-full pl-5 sm:pl-11 lg:pl-14 min-h-screen flex flex-col justify-center">
+      <div className="max-w-[1500px] mx-auto w-full pl-5 sm:pl-11 lg:pl-14  flex flex-col justify-center">
         <div className="flex flex-wrap items-end gap-x-6 gap-y-4 pr-5 sm:pr-11 lg:pr-14">
-          <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full sm:w-auto">
+          <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full">
             Projects
           </h3>
 
           <div
             role="group"
             aria-label="Filter projects by technology"
-            className="flex flex-1 flex-wrap gap-2 sm:gap-3 lg:gap-6 justify-start sm:justify-center mb-2"
+            className="flex flex-1 flex-wrap gap-2 sm:gap-3 lg:gap-6 justify-start lg:justify-center mb-2"
           >
             <button
               onClick={() => setActive(null)}

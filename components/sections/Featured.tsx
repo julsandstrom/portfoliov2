@@ -16,108 +16,121 @@ const Featured = () => {
   return (
     <motion.section
       id="featured"
-      className="relative z-10 bg-[#F0F0F0] text-black min-h-screen"
+      className="relative z-10 bg-[#F0F0F0]  text-black min-h-screen"
       initial="hidden"
       whileInView="visible"
       variants={sectionVariants}
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
-        <div className="relative min-h-[50vw] lg:min-h-0">
-          <Image
-            src="/images/perfect-parry-mobile.png"
-            alt=""
-            aria-hidden="true"
-            fill
-            className="object-cover"
-          />
-          <span
-            aria-label="Featured project"
-            className="
-              absolute -bottom-12 md:-bottom-20 right-10 font-gilda lg:-right-16 lg:bottom-20 rounded-full
-              bg-[#a50f0f] text-[#ffffff]
-               text-base xl:text-xl 2xl:text-2xl
-              font-bold    uppercase
-              md:py-12 md:px-6 py-10 xl:py-16 px-3 select-none
-            "
-          >
-            May 2026
-          </span>
-        </div>
-
-        <div className="flex flex-col items-center justify-start lg:justify-center gap-10 lg:gap-10 px-4 md:px-8 sm:px-14 py-14 lg:py-0">
-          <h2 className="text-3xl font-extrabold leading-none  sm:text-4xl lg:text-5xl xl:text-6xl">
-            Perfect Parry
-          </h2>
-          <p className="text-base sm:text-lg lg:text-xl mx-auto text-center">
-            A turn-based game built without game libraries, hooks, context, &
-            requestAnimationFrame.
-          </p>
-
-          <ul className="space-y-4 mt-5 text-sm font-light sm:text-xl lg:mt-5">
-            <li className="flex items-start ">
-              <span
+      <div className="  mx-auto min-h-screen text-black bg-none w-full px-4 md:pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen -mx-4 ">
+          <div className="relative min-h-[80vw] lg:min-h-0 ">
+            <Image
+              src="/images/experience-mobile.png"
+              alt="Experience"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="relative flex flex-col items-center justify-start lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-lg md:max-w-5xl 2xl:max-w-5xl mx-auto">
+            <div className="lg:px-8 flex flex-col items-center gap-2">
+              <h2 className="font-gilda text-2xl lg:text-6xl text-center ">
+                Internship 2026
+              </h2>
+              <ul className="space-y-4 mt-5 text-sm font-light sm:text-xl lg:mt-5">
+                <li className="flex items-start ">
+                  <span
+                    aria-hidden="true"
+                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                  >
+                    +
+                  </span>
+                  Independently designed and implemented a full mobile chat
+                  interface from Figma to production.
+                </li>
+                <li className="flex items-start ">
+                  <span
+                    aria-hidden="true"
+                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                  >
+                    +
+                  </span>
+                  Built a unified ChatContext managing modal state, active
+                  conversations, and mobile navigation across three views,
+                  coordinating multiple UI states atomically to prevent
+                  inconsistent transitions.
+                </li>
+                <li className="flex items-start ">
+                  <span
+                    aria-hidden="true"
+                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                  >
+                    +
+                  </span>
+                  Built workspace navigation, real-time chat flow, reactions.
+                </li>
+              </ul>
+            </div>
+            <figure className="absolute bottom-15 sm:-bottom-20 lg:bottom-10 left-0 right-0 px-8 md:px-14">
+              <figcaption className="sr-only">
+                Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
+              </figcaption>
+              <div
                 aria-hidden="true"
-                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                className="flex items-end justify-center 2xl:justify-around place-items-end gap-8"
               >
-                +
-              </span>
-              Built with Next.js, TypeScript, and Tailwind
-            </li>
-            <li className="flex items-start ">
-              <span
-                aria-hidden="true"
-                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
-              >
-                +
-              </span>
-              Frame-rate independent sprite animations via requestAnimationFrame
-            </li>
-            <li className="flex items-start ">
-              <span
-                aria-hidden="true"
-                className="pr-2 pt-0.5 text-xs text-[#0B0B0B] sm:text-xl font-bold"
-              >
-                +
-              </span>
-              Phase-based state machine with locked transition states
-            </li>
-          </ul>
+                <Image
+                  src="/icons/Nextjs-logo.svg"
+                  alt=""
+                  aria-hidden="true"
+                  height={30}
+                  width={30}
+                  className=" w-10 sm:w-16  h-fit"
+                />
 
-          <div className="flex gap-10 items-center lg:mt-10 lg:gap-16">
-            {" "}
-            <a
-              aria-label="Try featured demo"
-              href="https://perfectparry.vercel.app/"
-              className="w-fit inline-flex items-center rounded-[1px] bg-transparent
-    px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg
-    font-normal tracking-[0.03em] text-[#0B0B0B]
-    border border-[#0B0B0B]/40
-    transition-colors duration-200
-    hover:bg-[rgba(0,0,0,0.05)] hover:border-[#0B0B0B]/80
-    focus-visible:outline-none
-    focus-visible:ring-2 focus-visible:ring-[#0B0B0B]
-    focus-visible:ring-offset-2 focus-visible:ring-offset-[#F0F0F0] hover:border-1"
-            >
-              <span className="relative z-10">Try it out</span>
-            </a>
-            <a
-              aria-label="Read more about the project on its dedicated page"
-              href="/perfectparry"
-              className="w-fit inline-flex items-center rounded-[1px]
-    px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-lg
-    font-normal tracking-[0.03em]  text-[#EAE6E1]
+                <Image
+                  src="/icons/Tailwind_CSS_logo_with_dark_text.svg"
+                  alt=""
+                  aria-hidden="true"
+                  height={30}
+                  width={30}
+                  className="ml-2 h-fit w-20 sm:w-28"
+                />
 
-    hover:bg-[#1f1f1f]
-    border border-[#0B0B0B]/40
-    transition-colors duration-200
-    bg-[#0D0D0D] hover:border-[#0B0B0B]/80
-    focus-visible:outline-none
-    focus-visible:ring-2 focus-visible:ring-[#0B0B0B]
-    focus-visible:ring-offset-2 focus-visible:ring-offset-[#F0F0F0] hover:border-1"
-            >
-              <span className="relative z-10">Read more</span>
-            </a>
+                <div className="flex items-end justify-center">
+                  <Image
+                    src="/icons/React-icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    height={30}
+                    width={30}
+                    className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="text-xs sm:text-sm font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80  leading-none"
+                  >
+                    React
+                  </span>
+                </div>
+                <div className="flex items-end justify-center">
+                  <Image
+                    src="/icons/Typescript_logo_2020.svg"
+                    alt=""
+                    aria-hidden="true"
+                    height={30}
+                    width={30}
+                    className="ml-2 w-3 sm:w-4 md:w-6 h-fit"
+                  />
+                  <span
+                    aria-hidden="true"
+                    className="text-xs sm:text-base  font-semibold ml-0.5 md:ml-2 text-[#0F0F0F]/80 leading-none"
+                  >
+                    TypeScript
+                  </span>
+                </div>
+              </div>
+            </figure>
           </div>
         </div>
       </div>
