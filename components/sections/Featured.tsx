@@ -55,10 +55,8 @@ const Featured = () => {
                   >
                     +
                   </span>
-                  Built a unified ChatContext managing modal state, active
-                  conversations, and mobile navigation across three views,
-                  coordinating multiple UI states atomically to prevent
-                  inconsistent transitions.
+                  Built a unified ChatContext coordinating modal state, active
+                  conversations, and mobile navigation.
                 </li>
                 <li className="flex items-start ">
                   <span
