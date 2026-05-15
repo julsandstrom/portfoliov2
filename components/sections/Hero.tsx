@@ -47,27 +47,9 @@ const Hero = () => {
             >
               I'm Julian
             </h1>
-            <p className="font-thin text-lg md:text-xl lg:text-4xl mt-1 text-center">
-              Frontend Developer graduating in 2026
+            <p className="font-thin text-lg md:text-xl lg:text-2xl mt-1 text-center">
+              Building accessible interfaces with Next.js, React and TypeScript.
             </p>{" "}
-            <a
-              href="/about"
-              aria-label="Learn more about Julian"
-              className=" font-display
-    w-fit mx-auto block 
-    rounded-xs bg-[#0D0D0D]
-    px-5 sm:px-7 py-2 md:py-3 md:px-8 
-    text-sm sm:text-lg lg:text-xl tracking-[0.03em]
-    text-[#EAE6E1]
-
-    hover:bg-[#1f1f1f]
-   
-
-
-  "
-            >
-              About me
-            </a>{" "}
           </div>
         </div>
       </div>
