@@ -8,8 +8,8 @@ const CurrentlyBuilding = () => {
           In Progress
         </h3>
         <p className=" text-sm font-light sm:text-xl lg:mt-8">
-          <span className="font-bold">Fregoli</span>: a memory-based fashion
-          reconstruction game disguised as an ecommerce storefront.
+          A memory-based fashion reconstruction game disguised as an ecommerce
+          storefront.
         </p>
         <ul className="list-disc list-inside text-sm font-light sm:text-xl lg:mt-5">
           <li>Clothing API integration</li>
