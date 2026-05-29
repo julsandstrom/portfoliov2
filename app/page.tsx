@@ -3,6 +3,7 @@ import Hero from "@/components/sections/Hero";
 import Featured from "@/components/sections/Featured";
 
 import Projects from "@/components/sections/Projects";
+import CurrentlyBuilding from "@/components/sections/CurrentlyBuilding";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Featured />
         </div>
         <Projects />
+        <CurrentlyBuilding />
       </main>
     </>
   );

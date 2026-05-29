@@ -40,7 +40,7 @@ export default function Projects() {
             <button
               onClick={() => setActive(null)}
               aria-pressed={active === null}
-              className={`px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-[1px] border transition-colors duration-150 ${
+              className={`px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-xl border transition-colors duration-150 ${
                 active === null
                   ? "border-[#1B1B1B] border-2 bg-[#0D0D0D] text-white"
                   : "border-gray-600 text-gray-800 hover:border-gray-400 border-[0.2px] hover:border-2"
@@ -54,7 +54,7 @@ export default function Projects() {
                 key={tag}
                 onClick={() => setActive(active === tag ? null : tag)}
                 aria-pressed={active === tag}
-                className={`px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-[1px] border transition-colors duration-150 ${
+                className={`px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-xl border transition-colors duration-150 ${
                   active === tag
                     ? "border-[#1B1B1B] bg-[#0D0D0D] text-white border-2"
                     : "border-gray-600/50 text-gray-800 hover:border-gray-400 border-[0.2px] hover:border-2"
@@ -85,20 +85,20 @@ export default function Projects() {
           {visible.map((p) => (
             <li
               key={p.title}
-              className="shrink-0 snap-start pb-6 rounded-xs lg:shrink lg:snap-none lg:pb-0"
+              className="shrink-0 snap-start pb-6 rounded-xl lg:shrink lg:snap-none lg:pb-0"
             >
               <article
                 className="
-    h-full pb-4 relative
+    h-full  relative
     w-[300px] sm:w-[400px] md:w-[600px]
     lg:w-full
-    rounded-[1px] border border-gray-600
+    rounded-xl border-[0.3px] border-gray-600/40
     transition-colors duration-200
   "
               >
                 <a
                   href={p.url}
-                  className="block h-full flex flex-col focus-visible:outline-none"
+                  className=" h-full flex flex-col focus-visible:outline-none"
                 >
                   <Image
                     height={600}
@@ -111,15 +111,17 @@ export default function Projects() {
         sm:h-[350px] sm:w-[400px]
         md:h-[441px] md:w-[600px]
         lg:h-auto lg:w-full lg:aspect-video
-        object-cover shrink-0
+        object-cover shrink-0 rounded-t-xl
       "
                   />
-                  <div className="flex items-center px-4 py-3">
+                  <div className="flex items-center px-4 pt-3">
                     <h3 className="text-2xl sm:text-3xl font-semibold text-[#1B1B1B] flex">
                       {p.title}
                     </h3>
                   </div>
-                  <p className="px-4 font-light flex-1">{p.overlayBody}</p>
+                  <p className="px-4 font-light pb-4 md:pt-1">
+                    {p.overlayBody}
+                  </p>
                 </a>
               </article>
             </li>
