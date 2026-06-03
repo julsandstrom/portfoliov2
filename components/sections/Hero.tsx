@@ -31,7 +31,7 @@ const Hero = () => {
       >
         <div className="relative h-full [grid-area:image]">
           <Image
-            src="/images/profile.png"
+            src="/images/profile_bw.jpg"
             alt="Profile photo of Julian Sandström"
             fill
             priority

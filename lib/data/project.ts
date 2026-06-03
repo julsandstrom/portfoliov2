@@ -10,6 +10,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Auralize",
+    image: "/images/auralize.png",
+    overlayTitle: "Web accessibility tool",
+    overlayBody:
+      "Paste HTML/JSX and preview screen reader output + accessible name computation + warnings.",
+    url: "/auralize",
+
+    tags: ["Next.js", "React", "TypeScript"],
+  },
+  {
     title: "Cartlag",
     image: "/images/cartlag-page.png",
     overlayTitle: "A body measurement app",
@@ -59,16 +69,7 @@ export const projects: Project[] = [
 
     tags: ["React"],
   },
-  {
-    title: "Auralize",
-    image: "/images/auralize.png",
-    overlayTitle: "Web accessibility tool",
-    overlayBody:
-      "Paste HTML/JSX and preview screen reader output + accessible name computation + warnings.",
-    url: "/auralize",
 
-    tags: ["Next.js", "React", "TypeScript"],
-  },
   {
     title: "Return Cascade",
     image: "/images/returncascade-page.png",
