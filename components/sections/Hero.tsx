@@ -35,7 +35,7 @@ const Hero = () => {
             alt="Profile photo of Julian Sandström"
             fill
             priority
-            className=" object-cover"
+            className=" object-cover object-top"
           />
         </div>
 

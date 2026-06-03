@@ -23,13 +23,13 @@ const Featured = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className="  mx-auto min-h-screen text-black bg-none w-full px-4 md:pb-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen -mx-4 ">
-          <div className="relative min-h-[80vw] lg:min-h-0 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen -mx-4 items-center">
+          <div className="relative min-h-[60vw] lg:min-h-0  aspect-[3/3]">
             <Image
-              src="/images/experience-mobile.png"
+              src="/images/internship_mobiles.png"
               alt="Experience"
               fill
-              className="object-cover"
+              className="object-cover "
             />
           </div>
           <div className="relative flex flex-col items-center justify-start lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-lg md:max-w-5xl 2xl:max-w-5xl mx-auto">
@@ -69,13 +69,13 @@ const Featured = () => {
                 </li>
               </ul>
             </div>
-            <figure className="absolute bottom-15 sm:-bottom-20 lg:bottom-10 left-0 right-0 px-8 md:px-14">
+            {/* <figure className="absolute bottom-60 sm:-bottom-20 lg:bottom-10 left-0 right-0 px-8 md:px-14">
               <figcaption className="sr-only">
                 Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
               </figcaption>
               <div
                 aria-hidden="true"
-                className="flex items-end justify-center 2xl:justify-around place-items-end gap-8"
+                className="flex items-end justify-center 2xl:justify-around place-items-end gap-8 "
               >
                 <Image
                   src="/icons/Nextjs-logo.svg"
@@ -128,7 +128,7 @@ const Featured = () => {
                   </span>
                 </div>
               </div>
-            </figure>
+            </figure> */}
           </div>
         </div>
       </div>
