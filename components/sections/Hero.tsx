@@ -1,6 +1,7 @@
 "use client";
 import { useAnimation, useInView, useReducedMotion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 const Hero = () => {
@@ -49,7 +50,13 @@ const Hero = () => {
             </h1>
             <p className="font-thin text-lg md:text-xl lg:text-2xl mt-1 text-center">
               Building accessible interfaces with Next.js, React and TypeScript.
-            </p>{" "}
+            </p>
+            <Link
+              href="/about"
+              className="bg-[#0D0D0D] text-white px-6 py-2 rounded-xl mx-auto my-4 hover:bg-[#2a2a2a] text-base lg:px-8 lg:py-3 lg:text-lg transition-colors duration-150 lg:my-10"
+            >
+              About Me
+            </Link>{" "}
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Featured = () => {
   const sectionVariants = {
@@ -70,6 +71,12 @@ const Featured = () => {
                   Built workspace navigation, real-time chat flow, reactions.
                 </li>
               </ul>
+              <Link
+                href="/experience"
+                className="bg-[#0D0D0D] text-white px-6 py-2 rounded-xl mx-auto my-4 hover:bg-[#2a2a2a] text-base lg:px-8 lg:py-3 lg:text-lg transition-colors duration-150 lg:my-10"
+              >
+                Read More
+              </Link>
             </div>
             <figure className=" px-8 md:px-14 mt-5 mx-auto">
               <figcaption className="sr-only">

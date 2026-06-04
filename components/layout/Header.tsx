@@ -51,10 +51,16 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="/experience"
+            className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
+          >
+            Experience
+          </Link>
+          <Link
             href="/#work"
             className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
-            Work
+            Projects
           </Link>
           <Link
             href="/about"
@@ -62,12 +68,12 @@ export default function Header() {
           >
             About
           </Link>
-          <a
+          {/* <a
             href="mailto:juliansandstrom@gmail.com"
             className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
           >
             Contact
-          </a>
+          </a> */}
         </nav>
       </div>
 
@@ -107,13 +113,22 @@ export default function Header() {
                 Home
               </Link>
             </div>
+            <div className=" flex justify-center w-full max-w-xs px-4 py-3   text-[#F4F3F1]">
+              <Link
+                href="/experience"
+                onClick={toggleMenu}
+                className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
+              >
+                Experience
+              </Link>
+            </div>
             <div className=" flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1]">
               <Link
                 href="/#work"
                 onClick={toggleMenu}
                 className=" transition-colors  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0B0B0B]"
               >
-                Work{" "}
+                Projects{" "}
               </Link>
             </div>{" "}
             <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
@@ -125,7 +140,7 @@ export default function Header() {
                 About{" "}
               </Link>{" "}
             </div>{" "}
-            <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
+            {/* <div className="flex justify-center w-full max-w-xs px-4 py-3 text-center  text-[#F4F3F1] ">
               <a
                 href="mailto:juliansandstrom@gmail.com"
                 target="_blank"
@@ -134,7 +149,7 @@ export default function Header() {
               >
                 Contact{" "}
               </a>{" "}
-            </div>
+            </div> */}
           </nav>
         </div>
       </div>

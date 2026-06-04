@@ -3,10 +3,10 @@ import { useState, useRef } from "react";
 import { projects } from "../../lib/data/project";
 import Image from "next/image";
 
-const ALL_TAGS = ["Next.js", "C#", "TypeScript", "React"];
+const ALL_TAGS = ["Next.js", "TypeScript", "React", "C#"];
 
 export default function Projects() {
-  const [active, setActive] = useState<string | null>(null);
+  const [active, setActive] = useState<string | null>("Next.js");
   const [scrollProgress, setScrollProgress] = useState(0);
   const ulRef = useRef<HTMLUListElement>(null);
 
@@ -37,7 +37,7 @@ export default function Projects() {
             aria-label="Filter projects by technology"
             className="flex flex-1 flex-wrap gap-2 sm:gap-3 lg:gap-6 justify-start lg:justify-center mb-2"
           >
-            <button
+            {/* <button
               onClick={() => setActive(null)}
               aria-pressed={active === null}
               className={`px-3 py-1 text-xs sm:text-sm tracking-[0.08em] uppercase rounded-xl border transition-colors duration-150 ${
@@ -47,7 +47,7 @@ export default function Projects() {
               }`}
             >
               All
-            </button>
+            </button> */}
 
             {ALL_TAGS.map((tag) => (
               <button
