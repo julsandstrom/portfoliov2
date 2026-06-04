@@ -13,7 +13,6 @@ const About = () => {
               I recently graduated from the Frontend Developer program at Jensen
               Yrkeshögskola, where my final thesis focused on web accessibility
               and inclusive design.
-              <br /> And it turns out those instincts transfer.
             </p>
             <p className="font-light text-base lg:text-xl">
               Before frontend, I studied film production and worked in flight
