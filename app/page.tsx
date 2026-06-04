@@ -21,7 +21,7 @@ export default function Home() {
           <Featured />
         </div>
         <Projects />
-        <CurrentlyBuilding />
+        {/* <CurrentlyBuilding /> */}
       </main>
     </>
   );

@@ -18,7 +18,7 @@ const Hero = () => {
     <section
       id="main"
       aria-labelledby="heroTitle"
-      className="sticky top-0 h-screen flex items-center justify-center bg-[#F0F0F0] text-black"
+      className="sticky top-0 h-screen flex items-center justify-center  text-black"
     >
       <div
         aria-hidden="true"

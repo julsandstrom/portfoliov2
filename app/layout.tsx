@@ -60,7 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${ibm.variable} ${clashDisplay.variable} ${gildaDisplay.variable}`}
     >
-      <body className="overflow-y-scroll  scroll-smooth motion-reduce:scroll-auto bg-[#0B0B0B] text-[#F4F3F1]">
+      <body className="overflow-y-scroll  scroll-smooth motion-reduce:scroll-auto bg-[#ededed]">
         <Header />
         {children} <Footer />
       </body>

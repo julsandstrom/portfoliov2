@@ -16,32 +16,34 @@ const Featured = () => {
   return (
     <motion.section
       id="featured"
-      className="relative z-10 bg-[#F0F0F0]  text-black min-h-screen"
+      className="relative z-10 bg-[#ededed] text-black py-10"
       initial="hidden"
       whileInView="visible"
       variants={sectionVariants}
       viewport={{ once: true, amount: 0.25 }}
     >
-      <div className="  mx-auto min-h-screen text-black bg-none w-full px-4 md:pb-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen -mx-4 items-center">
-          <div className="relative min-h-[60vw] lg:min-h-0  aspect-[3/3]">
+      <div className="  mx-auto  text-black bg-none w-full px-4 md:pb-10">
+        {" "}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 -mx-4 items-center">
+          <div className="relative w-[60%] lg:w-[80%]  mx-auto aspect-[3/3]  lg:min-h-0">
             <Image
               src="/images/internship_mobiles.png"
               alt="Experience"
               fill
-              className="object-cover "
+              className="object-cover overflow-visible lg:ml-5"
             />
           </div>
-          <div className="relative flex flex-col items-center justify-start lg:justify-center px-6 mt-4 sm:my-6 lg:my-0 lg:px-10 gap-[clamp(2.2rem,4vw,3rem)] max-w-lg md:max-w-5xl 2xl:max-w-5xl mx-auto">
-            <div className="lg:px-8 flex flex-col items-center gap-2">
-              <h2 className="font-gilda text-2xl lg:text-6xl text-center ">
-                Internship 2026
-              </h2>
-              <ul className="space-y-4 mt-5 text-sm font-light sm:text-xl lg:mt-5">
+          <div className=" flex flex-col items-start justify-start lg:justify-center px-6 mt-4 lg:my-0 lg:px-10    md:max-w-5xl 2xl:max-w-5xl mx-auto gap-3 md:gap-5">
+            <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em]  shrink-0 w-full lg:text-center">
+              Internship
+            </h3>
+
+            <div className="lg:px-8 flex flex-col items-start lg:items-center justify-start gap-2">
+              <ul className="space-y-4  text-sm font-light sm:text-xl lg:mt-5">
                 <li className="flex items-start ">
                   <span
                     aria-hidden="true"
-                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                    className="pr-2  text-xs  sm:text-xl font-bold"
                   >
                     +
                   </span>
@@ -51,7 +53,7 @@ const Featured = () => {
                 <li className="flex items-start ">
                   <span
                     aria-hidden="true"
-                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                    className="pr-2  text-xs  sm:text-xl font-bold"
                   >
                     +
                   </span>
@@ -61,7 +63,7 @@ const Featured = () => {
                 <li className="flex items-start ">
                   <span
                     aria-hidden="true"
-                    className="pr-2  text-xs text-[#0B0B0B] sm:text-xl font-bold"
+                    className="pr-2  text-xs  sm:text-xl font-bold"
                   >
                     +
                   </span>
@@ -69,7 +71,7 @@ const Featured = () => {
                 </li>
               </ul>
             </div>
-            {/* <figure className="absolute bottom-60 sm:-bottom-20 lg:bottom-10 left-0 right-0 px-8 md:px-14">
+            <figure className=" px-8 md:px-14 mt-5 mx-auto">
               <figcaption className="sr-only">
                 Technologies I use: Next.js, Tailwind CSS, React, TypeScript.
               </figcaption>
@@ -128,7 +130,7 @@ const Featured = () => {
                   </span>
                 </div>
               </div>
-            </figure> */}
+            </figure>
           </div>
         </div>
       </div>

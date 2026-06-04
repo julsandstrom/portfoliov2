@@ -24,11 +24,11 @@ export default function Projects() {
   return (
     <section
       id="work"
-      className="bg-[#F0F0F0] text-black py-10 sm:py-20 sm:pt-48 lg:pt-20 "
+      className="  text-black py-10 sm:py-20 sm:pt-48 lg:pt-20 "
     >
       <div className="max-w-[1500px] mx-auto w-full pl-5 sm:pl-11 lg:pl-14  flex flex-col justify-center">
         <div className="flex flex-wrap items-end gap-x-6 gap-y-4 pr-5 sm:pr-11 lg:pr-14">
-          <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em] text-[#1B1B1B] shrink-0 w-full">
+          <h3 className="font-gilda text-3xl sm:text-5xl md:text-6xl font-semibold tracking-[0.03em]  shrink-0 w-full">
             Projects
           </h3>
 
@@ -115,7 +115,7 @@ export default function Projects() {
       "
                   />
                   <div className="flex items-center px-4 pt-3">
-                    <h3 className="text-2xl sm:text-3xl font-semibold text-[#1B1B1B] flex">
+                    <h3 className="text-2xl sm:text-3xl font-semibold  flex">
                       {p.title}
                     </h3>
                   </div>
