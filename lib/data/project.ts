@@ -10,6 +10,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Adaptive Components",
+    image: "/images/adaptive-components-page.png",
+    overlayTitle: "Accessible, layout-aware React components",
+    overlayBody:
+      "A component showcase exploring CSS Container Queries, semantic HTML, accessibility patterns, and reusable feature-based architecture.",
+    url: "/adaptive-components",
+
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
     title: "Auralize",
     image: "/images/auralize.png",
     overlayTitle: "Web accessibility tool",

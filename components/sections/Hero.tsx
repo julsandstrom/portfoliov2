@@ -46,7 +46,7 @@ const Hero = () => {
               id="heroTitle"
               className="text-5xl md:text-3xl lg:text-8xl text-center"
             >
-              I'm Julian
+              Julian Sandström
             </h1>
             <p className="font-thin text-lg md:text-xl lg:text-2xl mt-1 text-center">
               Building accessible interfaces with Next.js, React and TypeScript.
