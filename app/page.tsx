@@ -3,17 +3,16 @@ import Hero from "@/components/sections/Hero";
 import Featured from "@/components/sections/Featured";
 
 import Projects from "@/components/sections/Projects";
-import CurrentlyBuilding from "@/components/sections/CurrentlyBuilding";
 
 export default function Home() {
   return (
     <>
-      <a
+      {/* <a
         href="#main"
         className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2  text-white p-4 z-100  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5672D] focus-visible:ring-offset-4 focus-visible:ring-offset-[#0B0B0B]"
       >
         Skip to main content
-      </a>
+      </a> */}
       <main tabIndex={-1} className="contents">
         <div className="relative">
           <Hero />
@@ -21,7 +20,7 @@ export default function Home() {
           <Featured />
         </div>
         <Projects />
-        {/* <CurrentlyBuilding /> */}
+      
       </main>
     </>
   );
