@@ -1,32 +1,21 @@
-"use client";
+
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+
 import Link from "next/link";
 
 const Featured = () => {
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const },
-    },
-  };
+
 
   return (
-    <motion.section
-      id="featured"
-      className="relative z-10 bg-[#ededed] text-black py-10"
-      initial="hidden"
-      whileInView="visible"
-      variants={sectionVariants}
-      viewport={{ once: true, amount: 0.25 }}
-    >
+ <section
+  id="featured"
+  className="relative z-10 bg-[#ededed] text-black py-10"
+>
       <div className="  mx-auto  text-black bg-none w-full px-4 md:pb-10">
         {" "}
         <div className="flex flex-col lg:grid lg:grid-cols-2 -mx-4 items-center">
-          <div className="relative w-[60%] lg:w-[80%]  mx-auto aspect-[3/3]  lg:min-h-0">
+          <div className="relative w-[60%] lg:w-[50%]  mx-auto aspect-[3/3]  lg:min-h-0">
             <Image
               src="/images/internship_mobiles.png"
               alt="Experience"
@@ -141,7 +130,7 @@ const Featured = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

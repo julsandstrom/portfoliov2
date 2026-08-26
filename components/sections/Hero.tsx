@@ -1,25 +1,16 @@
-"use client";
-import { useAnimation, useInView, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+
 
 const Hero = () => {
-  const controls = useAnimation();
-  const ref = useRef(null);
-  const inView = useInView(ref, { amount: 0.6, once: true });
-  const shouldReduceMotion = useReducedMotion();
 
-  useEffect(() => {
-    if (shouldReduceMotion) return;
-    if (inView) controls.start("visible");
-  }, [inView, controls, shouldReduceMotion]);
+
 
   return (
     <section
       id="main"
       aria-labelledby="heroTitle"
-      className="sticky top-0 h-screen flex items-center justify-center  text-black"
+      className="relative h-screen flex items-center justify-center text-black"
     >
       <div
         aria-hidden="true"
